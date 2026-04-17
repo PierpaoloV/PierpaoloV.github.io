@@ -1,0 +1,212 @@
+/* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #2c3e50;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 500;
+}
+
+/* Navbar */
+.navbar {
+  border-bottom: 2px solid #1a7a4a;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* Hero section */
+.hero {
+  padding: 4rem 0 3rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.3rem;
+}
+
+.hero .subtitle {
+  font-size: 1.15rem;
+  color: #1a7a4a;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.hero .location {
+  color: #6c757d;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 640px;
+}
+
+/* Profile photo */
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #1a7a4a;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* CTA buttons */
+.cta-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary-custom {
+  background-color: #1a7a4a;
+  color: white;
+  padding: 0.55rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  border: 2px solid #1a7a4a;
+  transition: all 0.2s;
+}
+
+.btn-primary-custom:hover {
+  background-color: #145f3a;
+  border-color: #145f3a;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-secondary-custom {
+  background-color: transparent;
+  color: #1a7a4a;
+  padding: 0.55rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  border: 2px solid #1a7a4a;
+  transition: all 0.2s;
+}
+
+.btn-secondary-custom:hover {
+  background-color: #1a7a4a;
+  color: white;
+  text-decoration: none;
+}
+
+/* Section cards */
+.section-card {
+  background: #f8f9fa;
+  border-left: 4px solid #1a7a4a;
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-card h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #1a7a4a;
+}
+
+/* Skills badges */
+.skill-badge {
+  display: inline-block;
+  background: #e8f5ee;
+  color: #1a7a4a;
+  border: 1px solid #b2dfca;
+  border-radius: 4px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.85rem;
+  font-family: 'Roboto Mono', monospace;
+  margin: 0.2rem;
+}
+
+/* Publication / project entries */
+.pub-entry {
+  border-bottom: 1px solid #e9ecef;
+  padding: 1.25rem 0;
+}
+
+.pub-entry:last-child {
+  border-bottom: none;
+}
+
+.pub-venue {
+  font-size: 0.85rem;
+  color: #6c757d;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.pub-title {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin: 0.25rem 0;
+}
+
+.pub-meta {
+  font-size: 0.9rem;
+  color: #495057;
+  line-height: 1.5;
+}
+
+/* CV page */
+.cv-section {
+  margin-bottom: 2rem;
+}
+
+.cv-section h2 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #1a7a4a;
+  border-bottom: 2px solid #1a7a4a;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.cv-entry {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.cv-date {
+  min-width: 160px;
+  color: #6c757d;
+  font-size: 0.88rem;
+  padding-top: 0.1rem;
+}
+
+.cv-content strong {
+  display: block;
+  font-weight: 500;
+}
+
+.cv-content em {
+  color: #495057;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 1.8rem; }
+  .cv-date { min-width: 0; }
+  .cv-entry { flex-direction: column; gap: 0.25rem; }
+}

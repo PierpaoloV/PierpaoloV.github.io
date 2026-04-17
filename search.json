@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "PLOS ONE · May 2024\n\n\nAutomatic quantification of tumor-stroma ratio as a prognostic biomarker for pancreatic cancer\n\n\nVendittelli P, et al. Multi-class U-Net for TSR segmentation across 368 patients / 4 datasets (25 NL labs). Dice 0.75 (epithelium) and 0.86 (tumor bulk) on external TCGA-PAAD validation. TSR AUC 0.61 for 6-month survival prediction on an independent cohort.\n\n\n\n\nMIDL 2023 · Sep 2023 · Poster\n\n\nAutomatic quantification of TSR as a prognostic marker for pancreatic cancer\n\n\nVendittelli P, et al. Segmentation of tumor epithelium, healthy epithelium, and TSR estimation from pancreatic whole-slide images.\n\n\n\n\nCancers (MDPI) · Jul 2022 · Review\n\n\nSetting the research agenda for clinical AI in pancreatic adenocarcinoma imaging\n\n\nVendittelli P, et al. Systematic review of the current role of AI for pancreatic cancer diagnosis and personalised treatment planning.\n\n\n\n\nSPIE Medical Imaging · Apr 2022\n\n\nAutomatic tumour segmentation in H&E-stained whole-slide images of the pancreas\n\n\nVendittelli P, et al. Multi-task U-Net with auxiliary classification head for coarse pancreatic tumour area segmentation; classification head reduced false positives."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Personal Project · 2024 – Present\n\n\nWeekly AI Paper-Triage Agent\n\n\nMulti-agent pipeline (OpenAI API, Python): weekly arXiv / PubMed scan → LLM summarisation → interest-based scoring (0–10) → automated email digest. In active personal use since 2024. Demonstrates production LLM-agent design: scheduler, structured output, email delivery, and prompt-engineered relevance scoring.\nGitHub\n\n\n\n\nPhD Research · Radboud UMC · 2021 – 2024\n\n\nPancreatic Cancer WSI Segmentation & Prognosis (PANCAIM)\n\n\nEnd-to-end pipeline for whole-slide image analysis of pancreatic cancer within the EU Horizon 2020 PANCAIM consortium. Multi-class U-Net achieving Dice 0.75 / 0.86 on external validation across 368 patients from 25 Dutch labs. TSR-derived biomarker yielded AUC 0.61 for 6-month survival prediction.\nTech: PyTorch · MONAI · Docker · SLURM · Python\n\n\n\n\nPostdoc Research · Prinses Maxima Centre · 2024 – Present\n\n\nWilms Tumor Anaplasia Grading\n\n\nDeep-learning and multiple-instance learning pipelines for anaplasia detection and clinical outcome prediction from pediatric kidney tumor WSIs. Multi-center dataset integration across European collaborating hospitals.\nTech: PyTorch · MIL · Docker · multi-center data pipelines\n\n\n\n\nMaster’s Thesis · University of Girona · 2020\n\n\nMRI Synthesis: ResU-Net vs. GAN Benchmarking\n\n\nBenchmarked ResU-Net, cGAN, and CycleGAN for T1↔︎FLAIR MRI synthesis on WMH and BraTS 2018 datasets. ResU-Net achieved superior SSIM and lower MSE under data-scarce conditions. Grade: 8.6/10.\nTech: Keras · TensorFlow · Python · medical image registration"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "⬇ Applied Resume (PDF)   ⬇ Research Resume (PDF)   ⬇ Full Academic CV (PDF)"
+  },
+  {
+    "objectID": "cv.html#experience",
+    "href": "cv.html#experience",
+    "title": "Curriculum Vitae",
+    "section": "Experience",
+    "text": "Experience\n\n\nDec 2024 – Present\n\n\nPostdoc Researcher — Prinses Maxima Centre for Pediatric Oncology, Utrecht, NL\n\nDeveloping deep-learning and MIL pipelines for WSI analysis of Wilms tumor, targeting anaplasia grading and clinical outcome prediction.\nCoordinating multi-center dataset integration across collaborating hospitals.\nTranslating model outputs into interpretable biomarkers in collaboration with pathologists and pediatric oncologists.\nSupervising students; contributing to peer-reviewed publications.\n\n\n\n\n\nMar 2021 – Jun 2026 (exp.)\n\n\nPhD Candidate — AI for Digital Pathology — Radboud University Medical Center, Nijmegen, NL\n\nDeveloped deep-learning segmentation models for pancreatic cancer WSIs within PANCAIM (EU Horizon 2020).\nMulti-class U-Net for TSR quantification across 368 patients / 4 datasets (25 NL labs): Dice 0.75 / 0.86, AUC 0.61 for 6-month survival. Published in PLOS ONE (2024) and SPIE MI (2022).\nTeaching Assistant for Image Analysis and Medical Imaging Analysis (4 course editions, Radboud University).\nCo-supervised Master’s theses in computational medical imaging.\n\n\n\n\n\nOct 2020 – Feb 2021\n\n\nMachine Learning Engineer — Everis Italy (NTT DATA), Rome, IT\n\nBuilt AI solutions on Google Cloud Platform (Vertex AI, BigQuery ML, AutoML) for banking, fashion, and automotive clients.\n\n\n\n\n\nFeb 2020 – Sep 2020\n\n\nResearch Intern — ViCOROB – NeuroImage Computing Group, University of Girona, ES\n\nBenchmarked MRI synthesis architectures (ResU-Net, cGAN, CycleGAN) on WMH and BraTS 2018 datasets.\nResU-Net showed superior SSIM and lower MSE vs. GAN variants under data-scarce conditions; informed Master’s thesis (grade 8.6/10)."
+  },
+  {
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "Curriculum Vitae",
+    "section": "Education",
+    "text": "Education\n\n\n2021 – Jun 2026 (exp.)\n\n\nPhD, AI for Digital Pathology — Radboud University Medical Center, Nijmegen, NL\n\n\n\n\n2018 – 2020\n\n\nMSc, Biomedical Engineering — University of Rome Tor Vergata, IT — Grade 8.6/10\n\n\n\n\n2015 – 2018\n\n\nBSc, Biomedical Engineering — University of Rome Tor Vergata, IT"
+  },
+  {
+    "objectID": "cv.html#skills",
+    "href": "cv.html#skills",
+    "title": "Curriculum Vitae",
+    "section": "Skills",
+    "text": "Skills\n\n\n\n\n\n\n\nTrack\nTechnologies\n\n\n\n\nLanguages\nPython · C++ · C · Bash · SQL\n\n\nML / DL\nPyTorch · scikit-learn · Hugging Face Transformers · MONAI · Elastix · Keras\n\n\nMLOps & Infra\nDocker · Git · GCP (Vertex AI, BigQuery ML) · SLURM / GPU clusters · ONNX\n\n\nLLM & Agents\nOpenAI API · Anthropic API · RAG patterns · prompt engineering"
+  },
+  {
+    "objectID": "cv.html#publications",
+    "href": "cv.html#publications",
+    "title": "Curriculum Vitae",
+    "section": "Publications",
+    "text": "Publications\nSee the Publications page for full references with DOI links."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Pierpaolo Vendittelli",
+    "section": "",
+    "text": "Postdoc Researcher · Medical AI & Computational Pathology\n\n\n📍 Utrecht, The Netherlands  ·  Open to Italy · Remote EU · US-remote\n\nI build deep-learning systems for digital pathology — from whole-slide image segmentation to multi-center clinical AI pipelines. My current work focuses on Wilms tumor grading at Prinses Maxima Centre; my PhD at Radboud UMC produced validated models for pancreatic cancer prognosis (PLOS ONE 2024). I also design LLM-based automation tools for research workflows.\nI am actively seeking R&D / Applied Scientist / ML Engineer roles (finishing PhD June 2026).\n\nView CV Publications Projects GitHub"
+  },
+  {
+    "objectID": "index.html#research-interests",
+    "href": "index.html#research-interests",
+    "title": "Pierpaolo Vendittelli",
+    "section": "Research Interests",
+    "text": "Research Interests\n\n\n\nComputational Pathology\nWhole-slide image analysis, multi-instance learning, segmentation, and survival prediction in oncology.\n\n\n\n\nMedical AI\nEnd-to-end pipelines for clinical deployment — reproducible, multi-center, interpretable.\n\n\n\n\nLLM Agents & Automation\nProduction LLM pipelines for research workflows (paper triage, summarisation, scoring)."
+  },
+  {
+    "objectID": "index.html#selected-skills",
+    "href": "index.html#selected-skills",
+    "title": "Pierpaolo Vendittelli",
+    "section": "Selected Skills",
+    "text": "Selected Skills\nPython PyTorch MONAI Hugging Face Docker GCP SLURM OpenAI API Anthropic API Git scikit-learn C++ SQL"
+  }
+]
