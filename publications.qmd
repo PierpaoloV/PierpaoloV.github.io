@@ -1,0 +1,56 @@
+---
+title: "Publications"
+toc: false
+---
+
+::: {.pub-entry}
+::: {.pub-venue}
+PLOS ONE · May 2024
+:::
+::: {.pub-title}
+[Automatic quantification of tumor-stroma ratio as a prognostic biomarker for pancreatic cancer](https://doi.org/10.1371/journal.pone.0301969)
+:::
+::: {.pub-meta}
+**Vendittelli P**, et al.
+Multi-class U-Net for TSR segmentation across 368 patients / 4 datasets (25 NL labs). Dice 0.75 (epithelium) and 0.86 (tumor bulk) on external TCGA-PAAD validation. TSR AUC 0.61 for 6-month survival prediction on an independent cohort.
+:::
+:::
+
+::: {.pub-entry}
+::: {.pub-venue}
+MIDL 2023 · Sep 2023 · Poster
+:::
+::: {.pub-title}
+[Automatic quantification of TSR as a prognostic marker for pancreatic cancer](https://openreview.net/pdf?id=Dtz_iaUpGc)
+:::
+::: {.pub-meta}
+**Vendittelli P**, et al.
+Segmentation of tumor epithelium, healthy epithelium, and TSR estimation from pancreatic whole-slide images.
+:::
+:::
+
+::: {.pub-entry}
+::: {.pub-venue}
+Cancers (MDPI) · Jul 2022 · Review
+:::
+::: {.pub-title}
+[Setting the research agenda for clinical AI in pancreatic adenocarcinoma imaging](https://doi.org/10.3390/cancers14143498)
+:::
+::: {.pub-meta}
+**Vendittelli P**, et al.
+Systematic review of the current role of AI for pancreatic cancer diagnosis and personalised treatment planning.
+:::
+:::
+
+::: {.pub-entry}
+::: {.pub-venue}
+SPIE Medical Imaging · Apr 2022
+:::
+::: {.pub-title}
+[Automatic tumour segmentation in H&E-stained whole-slide images of the pancreas](https://doi.org/10.1117/12.2611542)
+:::
+::: {.pub-meta}
+**Vendittelli P**, et al.
+Multi-task U-Net with auxiliary classification head for coarse pancreatic tumour area segmentation; classification head reduced false positives.
+:::
+:::

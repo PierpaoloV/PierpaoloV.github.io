@@ -1,0 +1,82 @@
+---
+title: ""
+page-layout: full
+toc: false
+---
+
+::: {.hero}
+::: {.container}
+::: {.row .align-items-center}
+::: {.col-md-8}
+
+# Pierpaolo Vendittelli
+
+::: {.subtitle}
+Postdoc Researcher · Medical AI & Computational Pathology
+:::
+
+::: {.location}
+📍 Utrecht, The Netherlands &nbsp;·&nbsp; Open to Italy · Remote EU · US-remote
+:::
+
+I build deep-learning systems for digital pathology — from whole-slide image segmentation to multi-center clinical AI pipelines. My current work focuses on Wilms tumor grading at Prinses Maxima Centre; my PhD at Radboud UMC produced validated models for pancreatic cancer prognosis (PLOS ONE 2024). I also design LLM-based automation tools for research workflows.
+
+I am actively seeking **R&D / Applied Scientist / ML Engineer** roles (finishing PhD June 2026).
+
+::: {.cta-buttons}
+<a class="btn-primary-custom" href="cv.qmd">View CV</a>
+<a class="btn-secondary-custom" href="publications.qmd">Publications</a>
+<a class="btn-secondary-custom" href="projects.qmd">Projects</a>
+<a class="btn-secondary-custom" href="https://github.com/PierpaoloV" target="_blank">GitHub</a>
+:::
+
+:::
+::: {.col-md-4 .text-center}
+![](assets/profile.png){.profile-photo alt="Pierpaolo Vendittelli"}
+:::
+:::
+:::
+:::
+
+---
+
+## Research Interests
+
+::: {.row}
+::: {.col-md-4}
+::: {.section-card}
+### Computational Pathology
+Whole-slide image analysis, multi-instance learning, segmentation, and survival prediction in oncology.
+:::
+:::
+::: {.col-md-4}
+::: {.section-card}
+### Medical AI
+End-to-end pipelines for clinical deployment — reproducible, multi-center, interpretable.
+:::
+:::
+::: {.col-md-4}
+::: {.section-card}
+### LLM Agents & Automation
+Production LLM pipelines for research workflows (paper triage, summarisation, scoring).
+:::
+:::
+:::
+
+---
+
+## Selected Skills
+
+<span class="skill-badge">Python</span>
+<span class="skill-badge">PyTorch</span>
+<span class="skill-badge">MONAI</span>
+<span class="skill-badge">Hugging Face</span>
+<span class="skill-badge">Docker</span>
+<span class="skill-badge">GCP</span>
+<span class="skill-badge">SLURM</span>
+<span class="skill-badge">OpenAI API</span>
+<span class="skill-badge">Anthropic API</span>
+<span class="skill-badge">Git</span>
+<span class="skill-badge">scikit-learn</span>
+<span class="skill-badge">C++</span>
+<span class="skill-badge">SQL</span>

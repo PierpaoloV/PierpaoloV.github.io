@@ -1,0 +1,41 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Pierpaolo Vendittelli"
+  favicon: assets/profile.png
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: cv.qmd
+        text: CV
+      - href: publications.qmd
+        text: Publications
+      - href: projects.qmd
+        text: Projects
+    right:
+      - icon: github
+        href: https://github.com/PierpaoloV
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/pierpaolovendittelli
+        aria-label: LinkedIn
+      - icon: envelope
+        href: mailto:pierpaolovendittelli.93@gmail.com
+        aria-label: Email
+
+  page-footer:
+    left: "© 2026 Pierpaolo Vendittelli"
+    right: "Built with [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme:
+      light: cosmo
+    css: styles.css
+    toc: false
+    smooth-scroll: true
+    link-external-icon: false
+    link-external-newwindow: true

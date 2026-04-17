@@ -1,0 +1,124 @@
+---
+title: "Curriculum Vitae"
+toc: true
+toc-depth: 2
+---
+
+<div style="margin-bottom:1.5rem;">
+<a class="btn-primary-custom" href="https://github.com/PierpaoloV/cv/releases/latest/download/resume-applied.pdf" target="_blank">⬇ Applied Resume (PDF)</a>
+&nbsp;
+<a class="btn-secondary-custom" href="https://github.com/PierpaoloV/cv/releases/latest/download/resume-research.pdf" target="_blank">⬇ Research Resume (PDF)</a>
+&nbsp;
+<a class="btn-secondary-custom" href="https://github.com/PierpaoloV/cv/releases/latest/download/cv.pdf" target="_blank">⬇ Full Academic CV (PDF)</a>
+</div>
+
+---
+
+::: {.cv-section}
+## Experience
+
+::: {.cv-entry}
+::: {.cv-date}
+Dec 2024 – Present
+:::
+::: {.cv-content}
+**Postdoc Researcher** — *Prinses Maxima Centre for Pediatric Oncology, Utrecht, NL*
+
+- Developing deep-learning and MIL pipelines for WSI analysis of Wilms tumor, targeting anaplasia grading and clinical outcome prediction.
+- Coordinating multi-center dataset integration across collaborating hospitals.
+- Translating model outputs into interpretable biomarkers in collaboration with pathologists and pediatric oncologists.
+- Supervising students; contributing to peer-reviewed publications.
+:::
+:::
+
+::: {.cv-entry}
+::: {.cv-date}
+Mar 2021 – Jun 2026 (exp.)
+:::
+::: {.cv-content}
+**PhD Candidate — AI for Digital Pathology** — *Radboud University Medical Center, Nijmegen, NL*
+
+- Developed deep-learning segmentation models for pancreatic cancer WSIs within PANCAIM (EU Horizon 2020).
+- Multi-class U-Net for TSR quantification across 368 patients / 4 datasets (25 NL labs): Dice 0.75 / 0.86, AUC 0.61 for 6-month survival. Published in *PLOS ONE* (2024) and *SPIE MI* (2022).
+- Teaching Assistant for Image Analysis and Medical Imaging Analysis (4 course editions, Radboud University).
+- Co-supervised Master's theses in computational medical imaging.
+:::
+:::
+
+::: {.cv-entry}
+::: {.cv-date}
+Oct 2020 – Feb 2021
+:::
+::: {.cv-content}
+**Machine Learning Engineer** — *Everis Italy (NTT DATA), Rome, IT*
+
+- Built AI solutions on Google Cloud Platform (Vertex AI, BigQuery ML, AutoML) for banking, fashion, and automotive clients.
+:::
+:::
+
+::: {.cv-entry}
+::: {.cv-date}
+Feb 2020 – Sep 2020
+:::
+::: {.cv-content}
+**Research Intern** — *ViCOROB – NeuroImage Computing Group, University of Girona, ES*
+
+- Benchmarked MRI synthesis architectures (ResU-Net, cGAN, CycleGAN) on WMH and BraTS 2018 datasets.
+- ResU-Net showed superior SSIM and lower MSE vs. GAN variants under data-scarce conditions; informed Master's thesis (grade 8.6/10).
+:::
+:::
+:::
+
+---
+
+::: {.cv-section}
+## Education
+
+::: {.cv-entry}
+::: {.cv-date}
+2021 – Jun 2026 (exp.)
+:::
+::: {.cv-content}
+**PhD, AI for Digital Pathology** — *Radboud University Medical Center, Nijmegen, NL*
+:::
+:::
+
+::: {.cv-entry}
+::: {.cv-date}
+2018 – 2020
+:::
+::: {.cv-content}
+**MSc, Biomedical Engineering** — *University of Rome Tor Vergata, IT* — Grade 8.6/10
+:::
+:::
+
+::: {.cv-entry}
+::: {.cv-date}
+2015 – 2018
+:::
+::: {.cv-content}
+**BSc, Biomedical Engineering** — *University of Rome Tor Vergata, IT*
+:::
+:::
+:::
+
+---
+
+::: {.cv-section}
+## Skills
+
+| Track | Technologies |
+|---|---|
+| Languages | Python · C++ · C · Bash · SQL |
+| ML / DL | PyTorch · scikit-learn · Hugging Face Transformers · MONAI · Elastix · Keras |
+| MLOps & Infra | Docker · Git · GCP (Vertex AI, BigQuery ML) · SLURM / GPU clusters · ONNX |
+| LLM & Agents | OpenAI API · Anthropic API · RAG patterns · prompt engineering |
+:::
+
+---
+
+::: {.cv-section}
+## Publications
+
+See the [Publications page](publications.qmd) for full references with DOI links.
+:::
