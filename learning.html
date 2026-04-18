@@ -115,12 +115,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 <script>
 (function () {
+  // Quarto uses 'alternate' for dark, 'default' for light
   var stored = localStorage.getItem('quarto-color-scheme');
   if (!stored) {
-    localStorage.setItem('quarto-color-scheme', 'dark');
-    document.documentElement.setAttribute('data-bs-theme', 'dark');
-  } else if (stored === 'dark') {
-    document.documentElement.setAttribute('data-bs-theme', 'dark');
+    localStorage.setItem('quarto-color-scheme', 'alternate');
+  }
+  // Add class to <html> immediately to avoid flash before body script runs
+  if ((stored || 'alternate') === 'alternate') {
+    document.documentElement.classList.add('quarto-dark');
   }
 })();
 </script>
