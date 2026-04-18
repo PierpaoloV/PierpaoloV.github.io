@@ -5,6 +5,23 @@ toc: false
 
 ::: {.pub-entry}
 ::: {.pub-venue}
+Postdoc Research · Prinses Maxima Centre · 2024 – Present
+:::
+::: {.pub-title}
+Wilms Tumor Anaplasia Grading
+:::
+::: {.pub-meta}
+Deep-learning and multiple-instance learning pipelines for anaplasia detection and clinical outcome prediction from pediatric kidney tumor WSIs. Multi-center dataset integration across European collaborating hospitals.
+
+Tech: PyTorch · MIL · Docker · multi-center data pipelines
+
+[GitHub](https://github.com/PierpaoloV/wilms-anaplasia-mil){.btn-secondary-custom style="font-size:0.85rem;padding:0.25rem 0.75rem;"}
+
+:::
+:::
+
+::: {.pub-entry}
+::: {.pub-venue}
 Personal Project · 2024 – Present
 :::
 ::: {.pub-title}
@@ -54,17 +71,16 @@ Tech: PyTorch · MONAI · Docker · SLURM · Python
 
 ::: {.pub-entry}
 ::: {.pub-venue}
-Postdoc Research · Prinses Maxima Centre · 2024 – Present
+PhD Dissertation · Radboud UMC · 2021 – 2026
 :::
 ::: {.pub-title}
-Wilms Tumor Anaplasia Grading
+Learning from Histopathology Images: AI-Driven Biomarkers for Pancreatic Ductal Adenocarcinoma
 :::
 ::: {.pub-meta}
-Deep-learning and multiple-instance learning pipelines for anaplasia detection and clinical outcome prediction from pediatric kidney tumor WSIs. Multi-center dataset integration across European collaborating hospitals.
+Four-paper compilation thesis on computational pathology for pancreatic cancer. Covers automatic tumour segmentation (SPIE MI 2022), tumour-stroma ratio quantification (PLOS ONE 2023), morphological biomarkers for overall survival (Cancers 2024), and cross-biomarker comparison — validated across 300+ patients from multi-center European cohorts.
 
-Tech: PyTorch · MIL · Docker · multi-center data pipelines
-
-[GitHub](https://github.com/PierpaoloV/wilms-anaplasia-mil){.btn-secondary-custom style="font-size:0.85rem;padding:0.25rem 0.75rem;"}
+[GitHub](https://github.com/PierpaoloV/PhD-Dissertation){.btn-secondary-custom style="font-size:0.85rem;padding:0.25rem 0.75rem;"}
+[Download PDF](https://github.com/PierpaoloV/PhD-Dissertation/raw/main/PhD_Dissertation.pdf){.btn-secondary-custom style="font-size:0.85rem;padding:0.25rem 0.75rem;"}
 
 :::
 :::
