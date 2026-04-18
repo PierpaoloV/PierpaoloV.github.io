@@ -5,7 +5,7 @@ toc: false
 
 ::: {.pub-entry}
 ::: {.pub-venue}
-Personal Project · 2024 – Present
+Personal Project · 2024
 :::
 ::: {.pub-title}
 Weekly AI Paper-Triage Agent
@@ -13,13 +13,15 @@ Weekly AI Paper-Triage Agent
 ::: {.pub-meta}
 Multi-agent pipeline (OpenAI API, Python): weekly arXiv / PubMed scan → LLM summarisation → interest-based scoring (0–10) → automated email digest. In active personal use since 2024. Demonstrates production LLM-agent design: scheduler, structured output, email delivery, and prompt-engineered relevance scoring.
 
+Tech: Python · OpenAI API · Gmail API · SQLite · GitHub Actions 
+
 [GitHub](https://github.com/PierpaoloV/weekly_ai_paper){.btn-secondary-custom style="font-size:0.85rem;padding:0.25rem 0.75rem;"}
 :::
 :::
 
 ::: {.pub-entry}
 ::: {.pub-venue}
-Personal Project · 2025 – Present
+Personal Project · 2026
 :::
 ::: {.pub-title}
 AI Job Search Agent
@@ -35,13 +37,18 @@ Tech: Python · OpenAI API · Gmail API · SQLite · GitHub Actions · Telegram 
 
 ::: {.pub-entry}
 ::: {.pub-venue}
-PhD Dissertation · Radboud UMC · 2021 – 2026
+PhD Dissertation · Radboud University Medical Center · 2021 – 2024
 :::
 ::: {.pub-title}
 Learning from Histopathology Images: AI-Driven Biomarkers for Pancreatic Ductal Adenocarcinoma
 :::
 ::: {.pub-meta}
-Four-paper compilation thesis on computational pathology for pancreatic cancer. Covers automatic tumour segmentation (SPIE MI 2022), tumour-stroma ratio quantification (PLOS ONE 2023), morphological biomarkers for overall survival (Cancers 2024), and cross-biomarker comparison — validated across 300+ patients from multi-center European cohorts.
+PhD thesis focusing on the development of artificial intelligence methods for digital pathology in pancreatic ductal adenocarcinoma (PDAC).
+It addresses major challenges in prognostic assessment through automated tumor segmentation, biomarker quantification, and survival prediction from whole-slide histopathology images.
+A central contribution is the development of robust pipelines for tumor-stroma ratio analysis and other interpretable morphological biomarkers associated with patient outcome.
+The work also evaluates multiple deep learning feature extraction strategies for their ability to predict overall survival across different datasets.
+The findings demonstrate the potential of computational pathology to improve the speed, consistency, and clinical relevance of histopathological assessment in pancreatic cancer.
+Overall, the thesis contributes scalable and interpretable AI-based tools that support prognostic modeling and future precision oncology research.
 
 [GitHub](https://github.com/PierpaoloV/PhD-Dissertation){.btn-secondary-custom style="font-size:0.85rem;padding:0.25rem 0.75rem;"}
 [Download PDF](https://github.com/PierpaoloV/PhD-Dissertation/raw/main/PhD_Dissertation.pdf){.btn-secondary-custom style="font-size:0.85rem;padding:0.25rem 0.75rem;"}
@@ -68,7 +75,7 @@ Tech: PyTorch · Docker · HuggingFace · Python
 
 ::: {.pub-entry}
 ::: {.pub-venue}
-Postdoc Research · Prinses Maxima Centre · 2024 – Present
+Postdoc Research · Prinses Maxima Centre · 2025 - Present
 :::
 ::: {.pub-title}
 Wilms Tumor Anaplasia Grading
@@ -88,7 +95,7 @@ Tech: PyTorch · MIL · Docker · multi-center data pipelines
 PhD Research · Radboud UMC · 2021 – 2024
 :::
 ::: {.pub-title}
-Pancreatic Cancer WSI Segmentation & Prognosis (PANCAIM)
+Automatic Quantification of Tumor-Stroma Ratio as a prognostic biomarker for pancreatic cancer.
 :::
 ::: {.pub-meta}
 End-to-end pipeline for whole-slide image analysis of pancreatic cancer within the EU Horizon 2020 PANCAIM consortium. Multi-class U-Net achieving Dice 0.75 / 0.86 on external validation across 368 patients from 25 Dutch labs. TSR-derived biomarker yielded AUC 0.61 for 6-month survival prediction.
