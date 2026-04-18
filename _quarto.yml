@@ -30,6 +30,8 @@ website:
         href: "mailto:pierpaolovendittelli.93@gmail.com"
         aria-label: Email
 
+  google-analytics: "G-7EYEDKW974"
+
   page-footer:
     left: "© 2026 Pierpaolo Vendittelli"
     right: "Built with [Quarto](https://quarto.org)"
