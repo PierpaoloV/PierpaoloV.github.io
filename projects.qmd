@@ -5,6 +5,22 @@ toc: false
 
 ::: {.pub-entry}
 ::: {.pub-venue}
+Personal Project · 2026 – Present
+:::
+::: {.pub-title}
+Public Learning Log — Blind 75 · ML Fundamentals · System Design
+:::
+::: {.pub-meta}
+Structured preparation for senior ML / Research Scientist interviews at top-tier companies. Working through the Blind 75 LeetCode sequence, 20+ ML fundamentals flashcards with spaced-repetition, and system design writeups graded by GPT-4o. All solutions, notes, and review scores are public.
+
+Tech: Python · pytest · GPT-4o grader · SM-2 spaced repetition
+
+[GitHub](https://github.com/PierpaoloV/learning){.btn-secondary-custom style="font-size:0.85rem;padding:0.25rem 0.75rem;"}
+:::
+:::
+
+::: {.pub-entry}
+::: {.pub-venue}
 Personal Project · 2024 – Present
 :::
 ::: {.pub-title}
