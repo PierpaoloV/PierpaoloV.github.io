@@ -80,5 +80,8 @@ MRI Synthesis: ResU-Net vs. GAN Benchmarking
 Benchmarked ResU-Net, cGAN, and CycleGAN for T1↔FLAIR MRI synthesis on WMH and BraTS 2018 datasets. ResU-Net achieved superior SSIM and lower MSE under data-scarce conditions. Grade: 8.6/10.
 
 Tech: Keras · TensorFlow · Python · medical image registration
+
+[GitHub](https://github.com/PierpaoloV/mri-brain-synthesis-from-scratch){.btn-secondary-custom style="font-size:0.85rem;padding:0.25rem 0.75rem;"}
+
 :::
 :::
