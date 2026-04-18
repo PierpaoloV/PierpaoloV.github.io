@@ -19,6 +19,23 @@ Multi-agent pipeline (OpenAI API, Python): weekly arXiv / PubMed scan → LLM su
 
 ::: {.pub-entry}
 ::: {.pub-venue}
+Open Source Framework
+:::
+::: {.pub-title}
+Pathology Segmentation Pipeline
+:::
+::: {.pub-meta}
+A Docker-based pipeline for training and deploying deep learning segmentation models on Whole Slide Images (WSI). Built around an asynchronous tile inference engine, it supports tissue/background segmentation, multi-tissue classification, epithelium segmentation, and tumour-stroma ratio (TSR) computation for Pancreatic Cancer WSIs. The pipeline is also available as a pre-built image on DockerHub at `pierpaolov93/pathology-pipeline:latest`.
+
+Tech: PyTorch · Docker · HuggingFace · Python
+
+[GitHub](https://github.com/PierpaoloV/pathology-segmentation-pipeline){.btn-secondary-custom style="font-size:0.85rem;padding:0.25rem 0.75rem;"}
+[DockerHub](https://hub.docker.com/r/pierpaolov93/pathology-pipeline){.btn-secondary-custom style="font-size:0.85rem;padding:0.25rem 0.75rem;"}
+:::
+:::
+
+::: {.pub-entry}
+::: {.pub-venue}
 PhD Research · Radboud UMC · 2021 – 2024
 :::
 ::: {.pub-title}
