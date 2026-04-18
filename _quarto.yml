@@ -38,7 +38,21 @@ format:
   html:
     theme:
       light: cosmo
+      dark: darkly
     css: styles.css
+    include-in-header:
+      - text: |
+          <script>
+          (function () {
+            var stored = localStorage.getItem('quarto-color-scheme');
+            if (!stored) {
+              localStorage.setItem('quarto-color-scheme', 'dark');
+              document.documentElement.setAttribute('data-bs-theme', 'dark');
+            } else if (stored === 'dark') {
+              document.documentElement.setAttribute('data-bs-theme', 'dark');
+            }
+          })();
+          </script>
     toc: false
     smooth-scroll: true
     link-external-icon: false
