@@ -1,24 +1,25 @@
-/* Typography */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&display=swap');
+/* ─── Base typography ─────────────────────────────────────────────────────── */
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
-  color: #2c3e50;
+  color: #1e293b;
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4 {
-  font-weight: 500;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
 }
 
 /* ─── Navbar ──────────────────────────────────────────────────────────────── */
 
 .navbar {
-  border-bottom: 2px solid #1a7a4a;
+  border-bottom: 2px solid #059669;
 }
 
 .navbar-brand {
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
   font-size: 1.1rem;
 }
@@ -27,33 +28,39 @@ h1, h2, h3, h4 {
 
 .hero {
   padding: 4rem 0 3rem;
-  border-bottom: 1px solid #e9ecef;
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .hero h1 {
   font-size: 2.4rem;
   font-weight: 700;
-  color: #1a1a1a;
   margin-bottom: 0.3rem;
+  /* Static gradient on name */
+  background: linear-gradient(135deg, #059669 0%, #0ea5e9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: #059669; /* fallback for browsers without background-clip:text */
 }
 
 .hero .subtitle {
   font-size: 1.15rem;
-  color: #1a7a4a;
+  color: #059669;
   font-weight: 500;
   margin-bottom: 1rem;
 }
 
 .hero .location {
-  color: #6c757d;
+  color: #64748b;
   font-size: 0.95rem;
   margin-bottom: 1.5rem;
 }
 
 .hero p {
   font-size: 1.05rem;
-  line-height: 1.7;
+  line-height: 1.75;
   max-width: 640px;
+  color: #374151;
 }
 
 /* ─── Profile photo ───────────────────────────────────────────────────────── */
@@ -63,13 +70,19 @@ h1, h2, h3, h4 {
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #1a7a4a;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  border: 3px solid #059669;
+  box-shadow: 0 0 0 6px rgba(5, 150, 105, 0.12), 0 8px 24px rgba(0,0,0,0.1);
   display: block;
   margin: 0 auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* ─── CTA buttons ─────────────────────────────────────────────────────────── */
+.profile-photo:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 0 8px rgba(5, 150, 105, 0.2), 0 12px 32px rgba(0,0,0,0.15);
+}
+
+/* ─── CTA buttons (pill shape) ────────────────────────────────────────────── */
 
 .cta-buttons {
   margin-top: 1.5rem;
@@ -79,79 +92,89 @@ h1, h2, h3, h4 {
 }
 
 .btn-primary-custom {
-  background-color: #1a7a4a;
+  background-color: #059669;
   color: white;
-  padding: 0.55rem 1.2rem;
-  border-radius: 6px;
+  padding: 0.55rem 1.4rem;
+  border-radius: 999px;
   text-decoration: none;
   font-weight: 500;
   font-size: 0.95rem;
-  border: 2px solid #1a7a4a;
-  transition: all 0.2s;
+  border: 2px solid #059669;
+  transition: all 0.2s ease;
   display: inline-block;
 }
 
 .btn-primary-custom:hover {
-  background-color: #145f3a;
-  border-color: #145f3a;
+  background-color: #047857;
+  border-color: #047857;
   color: white;
   text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(5, 150, 105, 0.35);
 }
 
 .btn-secondary-custom {
   background-color: transparent;
-  color: #1a7a4a;
-  padding: 0.55rem 1.2rem;
-  border-radius: 6px;
+  color: #059669;
+  padding: 0.55rem 1.4rem;
+  border-radius: 999px;
   text-decoration: none;
   font-weight: 500;
   font-size: 0.95rem;
-  border: 2px solid #1a7a4a;
-  transition: all 0.2s;
+  border: 2px solid #059669;
+  transition: all 0.2s ease;
   display: inline-block;
 }
 
 .btn-secondary-custom:hover {
-  background-color: #1a7a4a;
+  background-color: #059669;
   color: white;
   text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(5, 150, 105, 0.35);
 }
 
 /* ─── Section cards ───────────────────────────────────────────────────────── */
 
 .section-card {
-  background: #f8f9fa;
-  border-left: 4px solid #1a7a4a;
-  border-radius: 6px;
+  background: #f8fafc;
+  border-left: 4px solid #059669;
+  border-radius: 10px;
   padding: 1.25rem 1.5rem;
   margin-bottom: 1.5rem;
   height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.section-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
 }
 
 .section-card h3 {
   margin-top: 0;
-  font-size: 1.1rem;
-  color: #1a7a4a;
+  font-size: 1.05rem;
+  color: #059669;
 }
 
-/* ─── Skills badges ───────────────────────────────────────────────────────── */
+/* ─── Skill badges ────────────────────────────────────────────────────────── */
 
 .skill-badge {
   display: inline-block;
-  background: #e8f5ee;
-  color: #1a7a4a;
-  border: 1px solid #b2dfca;
-  border-radius: 4px;
-  padding: 0.2rem 0.6rem;
-  font-size: 0.85rem;
+  background: #d1fae5;
+  color: #065f46;
+  border-radius: 6px;
+  padding: 0.2rem 0.65rem;
+  font-size: 0.82rem;
   font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
   margin: 0.2rem;
 }
 
 /* ─── Publication / project entries ──────────────────────────────────────── */
 
 .pub-entry {
-  border-bottom: 1px solid #e9ecef;
+  border-bottom: 1px solid #e2e8f0;
   padding: 1.25rem 0;
 }
 
@@ -160,23 +183,24 @@ h1, h2, h3, h4 {
 }
 
 .pub-venue {
-  font-size: 0.85rem;
-  color: #6c757d;
-  font-weight: 500;
+  font-size: 0.82rem;
+  color: #64748b;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
 }
 
 .pub-title {
   font-size: 1.05rem;
-  font-weight: 500;
-  margin: 0.25rem 0;
+  font-weight: 600;
+  margin: 0.3rem 0;
+  color: #1e293b;
 }
 
 .pub-meta {
   font-size: 0.9rem;
-  color: #495057;
-  line-height: 1.5;
+  color: #475569;
+  line-height: 1.6;
 }
 
 /* ─── CV page ─────────────────────────────────────────────────────────────── */
@@ -186,11 +210,12 @@ h1, h2, h3, h4 {
 }
 
 .cv-section h2 {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #1a7a4a;
-  border-bottom: 2px solid #1a7a4a;
+  color: #059669;
+  border-bottom: 2px solid #059669;
   padding-bottom: 0.3rem;
   margin-bottom: 1rem;
 }
@@ -203,151 +228,156 @@ h1, h2, h3, h4 {
 
 .cv-date {
   min-width: 160px;
-  color: #6c757d;
-  font-size: 0.88rem;
+  color: #64748b;
+  font-size: 0.85rem;
   padding-top: 0.1rem;
   flex-shrink: 0;
 }
 
 .cv-content strong {
   display: block;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .cv-content em {
-  color: #495057;
-  font-size: 0.95rem;
+  color: #475569;
+  font-size: 0.93rem;
 }
 
 /* ═══════════════════════════════════════════════════════════════════════════
-   DARK MODE  —  Quarto adds .quarto-dark to <body> when dark is active.
-   The head script also adds it to <html> early to avoid any flash.
+   DARK MODE  —  Triggered by data-bs-theme="dark" on <html> (Bootstrap 5.3)
    ═══════════════════════════════════════════════════════════════════════════ */
 
-.quarto-dark body,
-body.quarto-dark {
-  color: #dee2e6;
+[data-bs-theme="dark"] {
+  /* Override darkly's flat #222 with richer slate-900 */
+  --bs-body-bg: #0f172a;
+  --bs-body-color: #f1f5f9;
 }
 
-.quarto-dark .navbar,
-body.quarto-dark .navbar {
-  border-bottom-color: #4ade80;
-}
-
-.quarto-dark .hero,
-body.quarto-dark .hero {
-  border-bottom-color: #2d3748;
-}
-
-.quarto-dark .hero h1,
-body.quarto-dark .hero h1 {
+[data-bs-theme="dark"] body {
+  background-color: #0f172a;
   color: #f1f5f9;
 }
 
-.quarto-dark .hero .subtitle,
-body.quarto-dark .hero .subtitle {
-  color: #4ade80;
+[data-bs-theme="dark"] .navbar {
+  border-bottom-color: #34d399;
 }
 
-.quarto-dark .hero .location,
-body.quarto-dark .hero .location {
+[data-bs-theme="dark"] .hero {
+  border-bottom-color: #1e293b;
+}
+
+[data-bs-theme="dark"] .hero h1 {
+  background: linear-gradient(135deg, #34d399 0%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: #34d399;
+}
+
+[data-bs-theme="dark"] .hero .subtitle {
+  color: #34d399;
+}
+
+[data-bs-theme="dark"] .hero .location {
   color: #94a3b8;
 }
 
-.quarto-dark .hero p,
-body.quarto-dark .hero p {
+[data-bs-theme="dark"] .hero p {
   color: #cbd5e1;
 }
 
-.quarto-dark .profile-photo,
-body.quarto-dark .profile-photo {
-  border-color: #4ade80;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+[data-bs-theme="dark"] .profile-photo {
+  border-color: #34d399;
+  box-shadow: 0 0 0 6px rgba(52, 211, 153, 0.15), 0 8px 24px rgba(0,0,0,0.4);
 }
 
-.quarto-dark .btn-primary-custom,
-body.quarto-dark .btn-primary-custom {
-  background-color: #4ade80;
-  border-color: #4ade80;
+[data-bs-theme="dark"] .profile-photo:hover {
+  box-shadow: 0 0 0 8px rgba(52, 211, 153, 0.22), 0 12px 32px rgba(0,0,0,0.5);
+}
+
+[data-bs-theme="dark"] .btn-primary-custom {
+  background-color: #34d399;
+  border-color: #34d399;
   color: #0f172a;
 }
 
-.quarto-dark .btn-primary-custom:hover,
-body.quarto-dark .btn-primary-custom:hover {
-  background-color: #22c55e;
-  border-color: #22c55e;
+[data-bs-theme="dark"] .btn-primary-custom:hover {
+  background-color: #10b981;
+  border-color: #10b981;
   color: #0f172a;
+  box-shadow: 0 6px 16px rgba(52, 211, 153, 0.4);
 }
 
-.quarto-dark .btn-secondary-custom,
-body.quarto-dark .btn-secondary-custom {
-  color: #4ade80;
-  border-color: #4ade80;
+[data-bs-theme="dark"] .btn-secondary-custom {
+  color: #34d399;
+  border-color: #34d399;
   background-color: transparent;
 }
 
-.quarto-dark .btn-secondary-custom:hover,
-body.quarto-dark .btn-secondary-custom:hover {
-  background-color: #4ade80;
+[data-bs-theme="dark"] .btn-secondary-custom:hover {
+  background-color: #34d399;
   color: #0f172a;
+  box-shadow: 0 6px 16px rgba(52, 211, 153, 0.4);
 }
 
-.quarto-dark .section-card,
-body.quarto-dark .section-card {
-  background: #1e293b;
-  border-left-color: #4ade80;
+/* Glassmorphism cards */
+[data-bs-theme="dark"] .section-card {
+  background: rgba(30, 41, 59, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-left: 4px solid #34d399;
+  border-top: 1px solid rgba(52, 211, 153, 0.12);
+  border-right: 1px solid rgba(52, 211, 153, 0.08);
+  border-bottom: 1px solid rgba(52, 211, 153, 0.08);
+  border-radius: 10px;
 }
 
-.quarto-dark .section-card h3,
-body.quarto-dark .section-card h3 {
-  color: #4ade80;
+[data-bs-theme="dark"] .section-card:hover {
+  background: rgba(30, 41, 59, 0.75);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.35);
 }
 
-.quarto-dark .skill-badge,
-body.quarto-dark .skill-badge {
-  background: #0f2518;
-  color: #4ade80;
-  border-color: #166534;
+[data-bs-theme="dark"] .section-card h3 {
+  color: #34d399;
 }
 
-.quarto-dark .pub-entry,
-body.quarto-dark .pub-entry {
-  border-bottom-color: #334155;
+[data-bs-theme="dark"] .skill-badge {
+  background: rgba(52, 211, 153, 0.1);
+  color: #6ee7b7;
+  border: 1px solid rgba(52, 211, 153, 0.2);
 }
 
-.quarto-dark .pub-venue,
-body.quarto-dark .pub-venue {
+[data-bs-theme="dark"] .pub-entry {
+  border-bottom-color: #1e293b;
+}
+
+[data-bs-theme="dark"] .pub-venue {
   color: #94a3b8;
 }
 
-.quarto-dark .pub-title,
-body.quarto-dark .pub-title {
+[data-bs-theme="dark"] .pub-title {
   color: #f1f5f9;
 }
 
-.quarto-dark .pub-meta,
-body.quarto-dark .pub-meta {
-  color: #cbd5e1;
-}
-
-.quarto-dark .cv-section h2,
-body.quarto-dark .cv-section h2 {
-  color: #4ade80;
-  border-bottom-color: #4ade80;
-}
-
-.quarto-dark .cv-date,
-body.quarto-dark .cv-date {
+[data-bs-theme="dark"] .pub-meta {
   color: #94a3b8;
 }
 
-.quarto-dark .cv-content,
-body.quarto-dark .cv-content {
-  color: #dee2e6;
+[data-bs-theme="dark"] .cv-section h2 {
+  color: #34d399;
+  border-bottom-color: #34d399;
 }
 
-.quarto-dark .cv-content em,
-body.quarto-dark .cv-content em {
+[data-bs-theme="dark"] .cv-date {
+  color: #64748b;
+}
+
+[data-bs-theme="dark"] .cv-content {
+  color: #e2e8f0;
+}
+
+[data-bs-theme="dark"] .cv-content em {
   color: #94a3b8;
 }
 
@@ -355,29 +385,19 @@ body.quarto-dark .cv-content em {
    RESPONSIVE
    ═══════════════════════════════════════════════════════════════════════════ */
 
-/* Tablet (≤ 991px) */
 @media (max-width: 991px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .cv-date {
-    min-width: 130px;
-  }
+  .hero h1 { font-size: 2rem; }
+  .cv-date { min-width: 130px; }
 }
 
-/* Mobile (≤ 767px) */
 @media (max-width: 767px) {
-  body {
-    overflow-x: hidden;
-  }
+  body { overflow-x: hidden; }
 
   .hero {
     padding: 2rem 0 1.5rem;
     text-align: center;
   }
 
-  /* Photo first on mobile */
   .hero .col-md-4 {
     order: -1;
     margin-bottom: 1.5rem;
@@ -389,81 +409,35 @@ body.quarto-dark .cv-content em {
     margin-right: auto;
   }
 
-  .cta-buttons {
-    justify-content: center;
-  }
+  .cta-buttons { justify-content: center; }
 
-  .hero h1 {
-    font-size: 1.8rem;
-  }
+  .hero h1 { font-size: 1.8rem; }
+  .hero .subtitle { font-size: 1rem; }
 
-  .hero .subtitle {
-    font-size: 1rem;
-  }
+  .profile-photo { width: 140px; height: 140px; }
 
-  .profile-photo {
-    width: 140px;
-    height: 140px;
-  }
+  .section-card { margin-bottom: 1rem; }
 
-  .section-card {
-    margin-bottom: 1rem;
-  }
+  .cv-date { min-width: 0; font-size: 0.82rem; }
+  .cv-entry { flex-direction: column; gap: 0.2rem; }
 
-  .cv-date {
-    min-width: 0;
-    font-size: 0.82rem;
-  }
-
-  .cv-entry {
-    flex-direction: column;
-    gap: 0.2rem;
-  }
-
-  .pub-title {
-    font-size: 0.98rem;
-  }
+  .pub-title { font-size: 0.98rem; }
 
   .btn-primary-custom,
   .btn-secondary-custom {
     font-size: 0.88rem;
-    padding: 0.45rem 0.9rem;
+    padding: 0.45rem 1rem;
   }
 
-  .skill-badge {
-    font-size: 0.78rem;
-    padding: 0.15rem 0.5rem;
-  }
+  .skill-badge { font-size: 0.78rem; padding: 0.15rem 0.5rem; }
 }
 
-/* Small mobile (≤ 480px) */
 @media (max-width: 480px) {
-  .hero h1 {
-    font-size: 1.5rem;
-  }
-
-  .hero .subtitle {
-    font-size: 0.95rem;
-  }
-
-  .hero .location {
-    font-size: 0.85rem;
-  }
-
-  .profile-photo {
-    width: 120px;
-    height: 120px;
-  }
-
-  .pub-venue {
-    font-size: 0.78rem;
-  }
-
-  .pub-meta {
-    font-size: 0.85rem;
-  }
-
-  .navbar-brand {
-    font-size: 0.95rem;
-  }
+  .hero h1 { font-size: 1.5rem; }
+  .hero .subtitle { font-size: 0.95rem; }
+  .hero .location { font-size: 0.85rem; }
+  .profile-photo { width: 120px; height: 120px; }
+  .pub-venue { font-size: 0.78rem; }
+  .pub-meta { font-size: 0.85rem; }
+  .navbar-brand { font-size: 0.95rem; }
 }

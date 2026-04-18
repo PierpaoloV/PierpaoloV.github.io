@@ -42,16 +42,17 @@ format:
     css: styles.css
     include-in-header:
       - text: |
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
           <script>
           (function () {
-            // Quarto uses 'alternate' for dark, 'default' for light
             var stored = localStorage.getItem('quarto-color-scheme');
             if (!stored) {
               localStorage.setItem('quarto-color-scheme', 'alternate');
             }
-            // Add class to <html> immediately to avoid flash before body script runs
             if ((stored || 'alternate') === 'alternate') {
-              document.documentElement.classList.add('quarto-dark');
+              document.documentElement.setAttribute('data-bs-theme', 'dark');
             }
           })();
           </script>
