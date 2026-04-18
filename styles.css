@@ -5,13 +5,15 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: #2c3e50;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
   font-weight: 500;
 }
 
-/* Navbar */
+/* ─── Navbar ──────────────────────────────────────────────────────────────── */
+
 .navbar {
   border-bottom: 2px solid #1a7a4a;
 }
@@ -21,7 +23,8 @@ h1, h2, h3, h4 {
   font-size: 1.1rem;
 }
 
-/* Hero section */
+/* ─── Hero ────────────────────────────────────────────────────────────────── */
+
 .hero {
   padding: 4rem 0 3rem;
   border-bottom: 1px solid #e9ecef;
@@ -53,7 +56,8 @@ h1, h2, h3, h4 {
   max-width: 640px;
 }
 
-/* Profile photo */
+/* ─── Profile photo ───────────────────────────────────────────────────────── */
+
 .profile-photo {
   width: 180px;
   height: 180px;
@@ -61,9 +65,12 @@ h1, h2, h3, h4 {
   object-fit: cover;
   border: 3px solid #1a7a4a;
   box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  display: block;
+  margin: 0 auto;
 }
 
-/* CTA buttons */
+/* ─── CTA buttons ─────────────────────────────────────────────────────────── */
+
 .cta-buttons {
   margin-top: 1.5rem;
   display: flex;
@@ -81,6 +88,7 @@ h1, h2, h3, h4 {
   font-size: 0.95rem;
   border: 2px solid #1a7a4a;
   transition: all 0.2s;
+  display: inline-block;
 }
 
 .btn-primary-custom:hover {
@@ -100,6 +108,7 @@ h1, h2, h3, h4 {
   font-size: 0.95rem;
   border: 2px solid #1a7a4a;
   transition: all 0.2s;
+  display: inline-block;
 }
 
 .btn-secondary-custom:hover {
@@ -108,13 +117,15 @@ h1, h2, h3, h4 {
   text-decoration: none;
 }
 
-/* Section cards */
+/* ─── Section cards ───────────────────────────────────────────────────────── */
+
 .section-card {
   background: #f8f9fa;
   border-left: 4px solid #1a7a4a;
   border-radius: 6px;
   padding: 1.25rem 1.5rem;
   margin-bottom: 1.5rem;
+  height: 100%;
 }
 
 .section-card h3 {
@@ -123,7 +134,8 @@ h1, h2, h3, h4 {
   color: #1a7a4a;
 }
 
-/* Skills badges */
+/* ─── Skills badges ───────────────────────────────────────────────────────── */
+
 .skill-badge {
   display: inline-block;
   background: #e8f5ee;
@@ -136,7 +148,8 @@ h1, h2, h3, h4 {
   margin: 0.2rem;
 }
 
-/* Publication / project entries */
+/* ─── Publication / project entries ──────────────────────────────────────── */
+
 .pub-entry {
   border-bottom: 1px solid #e9ecef;
   padding: 1.25rem 0;
@@ -166,7 +179,8 @@ h1, h2, h3, h4 {
   line-height: 1.5;
 }
 
-/* CV page */
+/* ─── CV page ─────────────────────────────────────────────────────────────── */
+
 .cv-section {
   margin-bottom: 2rem;
 }
@@ -192,6 +206,7 @@ h1, h2, h3, h4 {
   color: #6c757d;
   font-size: 0.88rem;
   padding-top: 0.1rem;
+  flex-shrink: 0;
 }
 
 .cv-content strong {
@@ -204,9 +219,218 @@ h1, h2, h3, h4 {
   font-size: 0.95rem;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .hero h1 { font-size: 1.8rem; }
-  .cv-date { min-width: 0; }
-  .cv-entry { flex-direction: column; gap: 0.25rem; }
+/* ═══════════════════════════════════════════════════════════════════════════
+   DARK MODE
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+[data-bs-theme="dark"] body {
+  color: #e2e8f0;
+}
+
+[data-bs-theme="dark"] .navbar {
+  border-bottom-color: #4ade80;
+}
+
+[data-bs-theme="dark"] .hero {
+  border-bottom-color: #2d3748;
+}
+
+[data-bs-theme="dark"] .hero h1 {
+  color: #f1f5f9;
+}
+
+[data-bs-theme="dark"] .hero .subtitle {
+  color: #4ade80;
+}
+
+[data-bs-theme="dark"] .hero .location {
+  color: #94a3b8;
+}
+
+[data-bs-theme="dark"] .profile-photo {
+  border-color: #4ade80;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+[data-bs-theme="dark"] .btn-primary-custom {
+  background-color: #4ade80;
+  border-color: #4ade80;
+  color: #0f172a;
+}
+
+[data-bs-theme="dark"] .btn-primary-custom:hover {
+  background-color: #22c55e;
+  border-color: #22c55e;
+  color: #0f172a;
+}
+
+[data-bs-theme="dark"] .btn-secondary-custom {
+  color: #4ade80;
+  border-color: #4ade80;
+}
+
+[data-bs-theme="dark"] .btn-secondary-custom:hover {
+  background-color: #4ade80;
+  color: #0f172a;
+}
+
+[data-bs-theme="dark"] .section-card {
+  background: #1e293b;
+  border-left-color: #4ade80;
+}
+
+[data-bs-theme="dark"] .section-card h3 {
+  color: #4ade80;
+}
+
+[data-bs-theme="dark"] .skill-badge {
+  background: #0f2518;
+  color: #4ade80;
+  border-color: #166534;
+}
+
+[data-bs-theme="dark"] .pub-entry {
+  border-bottom-color: #2d3748;
+}
+
+[data-bs-theme="dark"] .pub-venue {
+  color: #94a3b8;
+}
+
+[data-bs-theme="dark"] .pub-title {
+  color: #f1f5f9;
+}
+
+[data-bs-theme="dark"] .pub-meta {
+  color: #cbd5e1;
+}
+
+[data-bs-theme="dark"] .cv-section h2 {
+  color: #4ade80;
+  border-bottom-color: #4ade80;
+}
+
+[data-bs-theme="dark"] .cv-date {
+  color: #94a3b8;
+}
+
+[data-bs-theme="dark"] .cv-content em {
+  color: #94a3b8;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* Tablet (≤ 991px) */
+@media (max-width: 991px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .cv-date {
+    min-width: 130px;
+  }
+}
+
+/* Mobile (≤ 767px) */
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .hero {
+    padding: 2rem 0 1.5rem;
+    text-align: center;
+  }
+
+  /* Photo first on mobile */
+  .hero .col-md-4 {
+    order: -1;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero p {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta-buttons {
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero .subtitle {
+    font-size: 1rem;
+  }
+
+  .profile-photo {
+    width: 140px;
+    height: 140px;
+  }
+
+  .section-card {
+    margin-bottom: 1rem;
+  }
+
+  .cv-date {
+    min-width: 0;
+    font-size: 0.82rem;
+  }
+
+  .cv-entry {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .pub-title {
+    font-size: 0.98rem;
+  }
+
+  .btn-primary-custom,
+  .btn-secondary-custom {
+    font-size: 0.88rem;
+    padding: 0.45rem 0.9rem;
+  }
+
+  .skill-badge {
+    font-size: 0.78rem;
+    padding: 0.15rem 0.5rem;
+  }
+}
+
+/* Small mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .hero .location {
+    font-size: 0.85rem;
+  }
+
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .pub-venue {
+    font-size: 0.78rem;
+  }
+
+  .pub-meta {
+    font-size: 0.85rem;
+  }
+
+  .navbar-brand {
+    font-size: 0.95rem;
+  }
 }
