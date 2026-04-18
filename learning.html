@@ -113,16 +113,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <style>html{ scroll-behavior: smooth; }</style>
 <script type="module" src="site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
 <link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Roboto+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 <script>
 (function () {
-  // Quarto uses 'alternate' for dark, 'default' for light
   var stored = localStorage.getItem('quarto-color-scheme');
   if (!stored) {
     localStorage.setItem('quarto-color-scheme', 'alternate');
   }
-  // Add class to <html> immediately to avoid flash before body script runs
   if ((stored || 'alternate') === 'alternate') {
-    document.documentElement.classList.add('quarto-dark');
+    document.documentElement.setAttribute('data-bs-theme', 'dark');
   }
 })();
 </script>
