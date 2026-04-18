@@ -70,9 +70,8 @@ Production LLM pipelines for research workflows (paper triage, summarisation, sc
 <span class="skill-badge">Python</span>
 <span class="skill-badge">PyTorch</span>
 <span class="skill-badge">MONAI</span>
-<span class="skill-badge">Hugging Face</span>
+<span class="skill-badge">HuggingFace</span>
 <span class="skill-badge">Docker</span>
-<span class="skill-badge">GCP</span>
 <span class="skill-badge">SLURM</span>
 <span class="skill-badge">OpenAI API</span>
 <span class="skill-badge">Anthropic API</span>

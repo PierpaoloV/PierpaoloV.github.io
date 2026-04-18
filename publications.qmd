@@ -44,7 +44,7 @@ Systematic review of the current role of AI for pancreatic cancer diagnosis and 
 
 ::: {.pub-entry}
 ::: {.pub-venue}
-SPIE Medical Imaging · Apr 2022
+SPIE Medical Imaging · Apr 2022 · Poster
 :::
 ::: {.pub-title}
 [Automatic tumour segmentation in H&E-stained whole-slide images of the pancreas](https://doi.org/10.1117/12.2611542)
@@ -52,5 +52,57 @@ SPIE Medical Imaging · Apr 2022
 ::: {.pub-meta}
 **Vendittelli P**, et al.
 Multi-task U-Net with auxiliary classification head for coarse pancreatic tumour area segmentation; classification head reduced false positives.
+:::
+:::
+
+::: {.pub-entry}
+::: {.pub-venue}
+European Radiology · 2025
+:::
+::: {.pub-title}
+End-to-end prognostication in pancreatic cancer by multimodal deep learning: a retrospective, multicenter study
+:::
+::: {.pub-meta}
+Schuurmans M, Saha A, Alves N, **Vendittelli P**, et al.
+Multimodal deep learning combining CT imaging and clinical data for PDAC outcome prediction across multiple centers.
+:::
+:::
+
+::: {.pub-entry}
+::: {.pub-venue}
+The Lancet Oncology · 2025
+:::
+::: {.pub-title}
+Artificial intelligence and radiologists in pancreatic cancer detection using standard of care CT scans (PANORAMA): an international, paired, non-inferiority, confirmatory, observational study
+:::
+::: {.pub-meta}
+Alves N, Schuurmans M, Rutkowski D, Saha A, **Vendittelli P**, et al.
+International paired non-inferiority study comparing AI and radiologists for pancreatic cancer detection on standard-of-care CT.
+:::
+:::
+
+::: {.pub-entry}
+::: {.pub-venue}
+Medical Image Analysis · 2025 · Review
+:::
+::: {.pub-title}
+Navigating the landscape of multimodal AI in medicine: a scoping review on technical challenges and clinical applications
+:::
+::: {.pub-meta}
+Schouten D, Nicoletti G, Dille B, Chia C, **Vendittelli P**, et al.
+Scoping review on technical challenges and clinical applications of multimodal AI in medicine.
+:::
+:::
+
+::: {.pub-entry}
+::: {.pub-venue}
+COMPAYL Workshop, MICCAI 2025 · Sep 2025 · Poster
+:::
+::: {.pub-title}
+Combining AI-based Biomarkers for PDAC Survival
+:::
+::: {.pub-meta}
+Hensens L, Sabroso-Lasa S, Verbeke C, Malats N, Litjens G, **Vendittelli P**.
+Multi-tissue segmentation pipeline integrating TSR, mitosis density, stromal cell density and tumor-to-tissue ratio for multivariate survival prediction in pancreatic cancer.
 :::
 :::
