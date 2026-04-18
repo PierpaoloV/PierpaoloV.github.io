@@ -16,12 +16,14 @@ Postdoc Researcher · Medical AI & Computational Pathology
 :::
 
 ::: {.location}
-📍 Utrecht, The Netherlands &nbsp;·&nbsp; Open to Italy · Remote EU · US-remote
+📍 Nijmegen, The Netherlands &nbsp;·&nbsp; Open to Italy · Remote EU · US-remote
 :::
 
-I build deep-learning systems for digital pathology — from whole-slide image segmentation to multi-center clinical AI pipelines. My current work focuses on Wilms tumor grading at Prinses Maxima Centre; my PhD at Radboud UMC produced validated models for pancreatic cancer prognosis (PLOS ONE 2024). I also design LLM-based automation tools for research workflows.
-
-I am actively seeking **R&D / Applied Scientist / ML Engineer** roles (finishing PhD June 2026).
+I develop deep learning systems for digital pathology, spanning whole-slide image segmentation, multi-center clinical AI pipelines, prognostic modeling, and downstream applications of foundation models. 
+My current work focuses on Wilms tumor grading at the Prinses Máxima Center for Pediatric Oncology. During my PhD at Radboud University Medical Center, I worked on pancreatic cancer prognosis, tumor segmentation, and tumor microenvironment quantification. 
+I also design LLM-based automation tools to streamline research workflows.
+This portfolio was developed as an experimental project using modern LLM-assisted development tools.
+I am actively seeking **R&D / Applied Scientist / ML Engineer** roles (defense date: June 1st, 2026).
 
 ::: {.cta-buttons}
 <a class="btn-primary-custom" href="cv.qmd">View CV</a>
@@ -45,19 +47,19 @@ I am actively seeking **R&D / Applied Scientist / ML Engineer** roles (finishing
 ::: {.row}
 ::: {.col-md-4}
 ::: {.section-card}
-### Computational Pathology
+### 🧠 Computational Pathology
 Whole-slide image analysis, multi-instance learning, segmentation, and survival prediction in oncology.
 :::
 :::
 ::: {.col-md-4}
 ::: {.section-card}
-### Medical AI
+### ⚙️ Clinical AI Systems
 End-to-end pipelines for clinical deployment — reproducible, multi-center, interpretable.
 :::
 :::
 ::: {.col-md-4}
 ::: {.section-card}
-### LLM Agents & Automation
+### 🤖 LLM Agents & Automation
 Production LLM pipelines for research workflows (paper triage, summarisation, scoring).
 :::
 :::
@@ -67,15 +69,20 @@ Production LLM pipelines for research workflows (paper triage, summarisation, sc
 
 ## Selected Skills
 
-<span class="skill-badge">Python</span>
+**Core ML**
 <span class="skill-badge">PyTorch</span>
+<span class="skill-badge">scikit-learn</span>
 <span class="skill-badge">MONAI</span>
-<span class="skill-badge">HuggingFace</span>
+
+**Systems & Infra**
 <span class="skill-badge">Docker</span>
 <span class="skill-badge">SLURM</span>
+
+**LLM & APIs**
 <span class="skill-badge">OpenAI API</span>
 <span class="skill-badge">Anthropic API</span>
-<span class="skill-badge">Git</span>
-<span class="skill-badge">scikit-learn</span>
+
+**Programming**
+<span class="skill-badge">Python</span>
 <span class="skill-badge">C++</span>
 <span class="skill-badge">SQL</span>
