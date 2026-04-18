@@ -13,7 +13,7 @@ Weekly AI Paper-Triage Agent
 ::: {.pub-meta}
 Multi-agent pipeline (OpenAI API, Python): weekly arXiv / PubMed scan → LLM summarisation → interest-based scoring (0–10) → automated email digest. In active personal use since 2024. Demonstrates production LLM-agent design: scheduler, structured output, email delivery, and prompt-engineered relevance scoring.
 
-[GitHub](https://github.com/PierpaoloV){.btn-secondary-custom style="font-size:0.85rem;padding:0.25rem 0.75rem;"}
+[GitHub](https://github.com/PierpaoloV/weekly_ai_paper){.btn-secondary-custom style="font-size:0.85rem;padding:0.25rem 0.75rem;"}
 :::
 :::
 
