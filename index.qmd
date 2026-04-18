@@ -23,6 +23,7 @@ I develop deep learning systems for digital pathology, spanning whole-slide imag
 My current work focuses on Wilms tumor grading at the Prinses Máxima Center for Pediatric Oncology. During my PhD at Radboud University Medical Center, I worked on pancreatic cancer prognosis, tumor segmentation, and tumor microenvironment quantification. 
 I also design LLM-based automation tools to streamline research workflows.
 This portfolio was developed as an experimental project using modern LLM-assisted development tools.
+
 I am actively seeking **R&D / Applied Scientist / ML Engineer** roles (defense date: June 1st, 2026).
 
 ::: {.cta-buttons}
@@ -43,6 +44,7 @@ I am actively seeking **R&D / Applied Scientist / ML Engineer** roles (defense d
 ---
 
 ## Research Interests
+
 
 ::: {.row}
 ::: {.col-md-4}
