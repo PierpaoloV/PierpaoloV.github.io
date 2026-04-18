@@ -13,7 +13,7 @@ API = `https://api.github.com/repos/${OWNER}/${REPO}`
 
 // Fetch full file tree once to know what exists
 treeJson = fetch(`${API}/git/trees/main?recursive=1`).then(r => r.json())
-existingPaths = treeJson.then(d => new Set((d.tree || []).map(f => f.path)))
+existingPaths = new Set((treeJson.tree || []).map(f => f.path))
 
 async function fetchRaw(path) {
   try {
@@ -107,9 +107,7 @@ problemStatuses = Promise.all(
   })
 )
 
-statusMap = problemStatuses.then(arr =>
-  Object.fromEntries(arr.map(s => [s.slug, s]))
-)
+statusMap = Object.fromEntries(problemStatuses.map(s => [s.slug, s]))
 
 // Fetch system design statuses
 allDesigns = schedule.weeks.filter(w => w.systemDesign).map(w => w.systemDesign)
@@ -121,9 +119,7 @@ designStatuses = Promise.all(
   })
 )
 
-designMap = designStatuses.then(arr =>
-  Object.fromEntries(arr.map(d => [d.slug, d]))
-)
+designMap = Object.fromEntries(designStatuses.map(d => [d.slug, d]))
 
 // Progress calculations
 weekProgress = {
@@ -295,6 +291,8 @@ function reviewBlock(content) {
 
   </div>`
 
-  return html`${html_out}`
+  const container = document.createElement("div");
+  container.innerHTML = html_out;
+  return container;
 }
 ```
