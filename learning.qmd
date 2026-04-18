@@ -1,0 +1,300 @@
+---
+title: "Learning"
+toc: false
+---
+
+```{ojs}
+//| echo: false
+
+OWNER = "PierpaoloV"
+REPO = "learning"
+RAW = `https://raw.githubusercontent.com/${OWNER}/${REPO}/main`
+API = `https://api.github.com/repos/${OWNER}/${REPO}`
+
+// Fetch full file tree once to know what exists
+treeJson = fetch(`${API}/git/trees/main?recursive=1`).then(r => r.json())
+existingPaths = treeJson.then(d => new Set((d.tree || []).map(f => f.path)))
+
+async function fetchRaw(path) {
+  try {
+    const r = await fetch(`${RAW}/${path}`)
+    if (!r.ok) return null
+    return await r.text()
+  } catch { return null }
+}
+
+function isSolved(content) {
+  if (!content) return false
+  const lines = content.split('\n').filter(l => l.trim() && !l.trim().startsWith('#') && !l.startsWith('from ') && !l.startsWith('import ') && !l.startsWith('class ') && !l.includes('Optional') && !l.includes('List'))
+  const body = lines.join('').replace(/\s/g, '')
+  return body !== '' && !body.endsWith('pass') && !body.includes('Writeyoursolutionhere')
+}
+
+function isWritten(content) {
+  if (!content) return false
+  return content.trim().length > 80 && !content.includes('Write your design here') && !content.includes('Write your solution here')
+}
+
+// Monthly schedule
+schedule = {
+  year: 2026,
+  monthLabel: "April – May 2026",
+  weekStarts: ["2026-04-18","2026-04-25","2026-05-02","2026-05-09"],
+  weeks: [
+    {
+      label: "Week 1 · Apr 18–24",
+      problems: [
+        { slug: "0001-two-sum", title: "Two Sum", difficulty: "Easy" }
+      ],
+      systemDesign: null,
+      cards: { count: 10, topics: "attention, backprop, batch norm, transformer, bias-variance, loss functions, RAG, MIL, optimizers, RLHF" }
+    },
+    {
+      label: "Week 2 · Apr 25 – May 1",
+      problems: [
+        { slug: "0217-contains-duplicate", title: "Contains Duplicate", difficulty: "Easy" },
+        { slug: "0049-group-anagrams", title: "Group Anagrams", difficulty: "Medium" },
+        { slug: "0238-product-of-array-except-self", title: "Product Except Self", difficulty: "Medium" }
+      ],
+      systemDesign: { slug: "url-shortener", title: "URL Shortener" },
+      cards: { count: 5, topics: "dropout, CNN, precision/recall, KV cache, transfer learning & LoRA" }
+    },
+    {
+      label: "Week 3 · May 2–8",
+      problems: [
+        { slug: "0125-valid-palindrome", title: "Valid Palindrome", difficulty: "Easy" },
+        { slug: "0015-3sum", title: "3Sum", difficulty: "Medium" },
+        { slug: "0020-valid-parentheses", title: "Valid Parentheses", difficulty: "Easy" }
+      ],
+      systemDesign: { slug: "key-value-store", title: "Key-Value Store" },
+      cards: { count: 3, topics: "vanishing gradient, data augmentation, ML system design" }
+    },
+    {
+      label: "Week 4 · May 9–15",
+      problems: [
+        { slug: "0121-best-time-to-buy-sell-stock", title: "Best Time to Buy Stock", difficulty: "Easy" },
+        { slug: "0003-longest-substring-without-repeating", title: "Longest Substring No Repeat", difficulty: "Medium" },
+        { slug: "0206-reverse-linked-list", title: "Reverse Linked List", difficulty: "Easy" }
+      ],
+      systemDesign: { slug: "rate-limiter", title: "Rate Limiter" },
+      cards: { count: 2, topics: "contrastive learning, LLM agents" }
+    }
+  ]
+}
+
+// Determine current week (0-indexed)
+currentWeekIdx = {
+  const today = new Date()
+  const starts = schedule.weekStarts.map(s => new Date(s))
+  let idx = 0
+  for (let i = 0; i < starts.length; i++) {
+    if (today >= starts[i]) idx = i
+  }
+  return idx
+}
+
+// Fetch all solution + review statuses in parallel
+allProblems = schedule.weeks.flatMap(w => w.problems)
+
+problemStatuses = Promise.all(
+  allProblems.map(async p => {
+    const paths = await existingPaths
+    const content = await fetchRaw(`leetcode/${p.slug}/solution.py`)
+    const solved = isSolved(content)
+    const reviewed = paths.has(`leetcode/${p.slug}/review.md`)
+    const reviewContent = reviewed ? await fetchRaw(`leetcode/${p.slug}/review.md`) : null
+    return { slug: p.slug, solved, reviewed, reviewContent }
+  })
+)
+
+statusMap = problemStatuses.then(arr =>
+  Object.fromEntries(arr.map(s => [s.slug, s]))
+)
+
+// Fetch system design statuses
+allDesigns = schedule.weeks.filter(w => w.systemDesign).map(w => w.systemDesign)
+
+designStatuses = Promise.all(
+  allDesigns.map(async d => {
+    const content = await fetchRaw(`system-design/${d.slug}/design.md`)
+    return { slug: d.slug, written: isWritten(content) }
+  })
+)
+
+designMap = designStatuses.then(arr =>
+  Object.fromEntries(arr.map(d => [d.slug, d]))
+)
+
+// Progress calculations
+weekProgress = {
+  const sm = await statusMap
+  const week = schedule.weeks[currentWeekIdx]
+  const total = week.problems.length
+  const solved = week.problems.filter(p => sm[p.slug]?.solved).length
+  return { solved, total, pct: total > 0 ? Math.round(solved / total * 100) : 0 }
+}
+
+monthProgress = {
+  const sm = await statusMap
+  const total = allProblems.length
+  const solved = allProblems.filter(p => sm[p.slug]?.solved).length
+  return { solved, total, pct: total > 0 ? Math.round(solved / total * 100) : 0 }
+}
+```
+
+```{ojs}
+//| echo: false
+
+// Render helpers
+function diffBadge(d) {
+  const colors = { Easy: "#22c55e", Medium: "#f59e0b", Hard: "#ef4444" }
+  return `<span style="background:${colors[d]||'#6b7280'};color:white;padding:1px 8px;border-radius:99px;font-size:0.72rem;font-weight:700;">${d}</span>`
+}
+
+function statusIcon(ok) {
+  return ok ? `<span style="color:#22c55e;font-size:1rem;">✅</span>`
+             : `<span style="color:#d1d5db;font-size:1rem;">⬜</span>`
+}
+
+function bar(pct, label, sub) {
+  return `
+  <div style="margin-bottom:1.1rem;">
+    <div style="display:flex;justify-content:space-between;margin-bottom:5px;">
+      <span style="font-weight:600;font-size:0.9rem;">${label}</span>
+      <span style="color:#6b7280;font-size:0.85rem;">${sub}</span>
+    </div>
+    <div style="background:#e5e7eb;border-radius:999px;height:13px;overflow:hidden;">
+      <div style="background:linear-gradient(90deg,#2E8B7A,#52b6a8);width:${pct}%;height:100%;border-radius:999px;transition:width 0.6s ease;min-width:${pct>0?'6px':'0'};"></div>
+    </div>
+  </div>`
+}
+
+function reviewBlock(content) {
+  if (!content) return ''
+  const preview = content.slice(0, 1800) + (content.length > 1800 ? '\n...' : '')
+  return `
+  <details style="margin-top:6px;">
+    <summary style="cursor:pointer;color:#2E8B7A;font-size:0.82rem;font-weight:500;user-select:none;">📝 Grader feedback</summary>
+    <div style="background:#f8fafc;border-left:3px solid #2E8B7A;padding:0.75rem 1rem;margin-top:6px;font-size:0.78rem;white-space:pre-wrap;font-family:'Fira Mono',monospace;line-height:1.5;border-radius:0 6px 6px 0;overflow-x:auto;">${preview.replace(/</g,'&lt;').replace(/>/g,'&gt;')}</div>
+  </details>`
+}
+```
+
+```{ojs}
+//| echo: false
+
+// Render full page
+{
+  const sm = await statusMap
+  const dm = await designMap
+  const wp = await weekProgress
+  const mp = await monthProgress
+
+  const weekLabel = schedule.weeks[currentWeekIdx].label
+
+  let html_out = `
+  <div style="max-width:860px;margin:auto;font-family:system-ui,sans-serif;">
+
+    <!-- Progress bars -->
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:1.5rem 1.75rem;margin-bottom:2rem;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
+      <h3 style="margin:0 0 1.2rem;font-size:1rem;color:#374151;text-transform:uppercase;letter-spacing:0.06em;">📊 Progress</h3>
+      ${bar(wp.pct, `This week — ${weekLabel}`, `${wp.solved} / ${wp.total} problems`)}
+      ${bar(mp.pct, `Month 1 — ${schedule.monthLabel}`, `${mp.solved} / ${mp.total} problems · ${schedule.weeks.flatMap(w=>w.problems).filter(p=>sm[p.slug]?.reviewed).length} reviewed`)}
+    </div>
+
+    <!-- Year -->
+    <details open>
+    <summary style="cursor:pointer;font-size:1.25rem;font-weight:700;padding:0.4rem 0;list-style:none;">
+      📁 2026
+    </summary>
+    <div style="padding-left:1.25rem;margin-top:0.5rem;">
+
+      <!-- Month -->
+      <details open>
+      <summary style="cursor:pointer;font-size:1.05rem;font-weight:600;padding:0.35rem 0;color:#374151;">
+        📅 ${schedule.monthLabel}
+      </summary>
+      <div style="padding-left:1rem;margin-top:0.5rem;">
+  `
+
+  for (let wi = 0; wi < schedule.weeks.length; wi++) {
+    const week = schedule.weeks[wi]
+    const solved = week.problems.filter(p => sm[p.slug]?.solved).length
+    const total = week.problems.length
+    const icon = solved === total ? "✅" : solved > 0 ? "🔄" : "⬜"
+    const isOpen = wi === currentWeekIdx ? "open" : ""
+
+    html_out += `
+      <details ${isOpen} style="margin-bottom:1rem;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;">
+      <summary style="cursor:pointer;font-size:0.97rem;font-weight:600;padding:0.75rem 1rem;background:#f9fafb;color:#111;list-style:none;display:flex;align-items:center;gap:0.5rem;">
+        <span>${icon}</span>
+        <span>${week.label}</span>
+        <span style="margin-left:auto;color:#6b7280;font-weight:400;font-size:0.85rem;">${solved}/${total} solved</span>
+      </summary>
+      <div style="padding:1rem 1.25rem;">
+
+        <!-- LeetCode -->
+        <p style="font-size:0.78rem;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:0.07em;margin:0 0 0.6rem;">💻 LeetCode</p>
+        <table style="width:100%;border-collapse:collapse;font-size:0.86rem;margin-bottom:1.25rem;">
+          <thead>
+            <tr style="border-bottom:2px solid #e5e7eb;color:#6b7280;font-size:0.8rem;">
+              <th style="padding:5px 8px;text-align:left;font-weight:600;">Problem</th>
+              <th style="padding:5px 8px;text-align:left;font-weight:600;">Difficulty</th>
+              <th style="padding:5px 8px;text-align:center;font-weight:600;">Solved</th>
+              <th style="padding:5px 8px;text-align:center;font-weight:600;">Reviewed</th>
+            </tr>
+          </thead>
+          <tbody>`
+
+    for (const p of week.problems) {
+      const s = sm[p.slug] || {}
+      html_out += `
+            <tr style="border-bottom:1px solid #f3f4f6;">
+              <td style="padding:8px 8px;vertical-align:top;">
+                <a href="https://github.com/PierpaoloV/learning/tree/main/leetcode/${p.slug}" target="_blank" style="color:#2E8B7A;font-weight:500;text-decoration:none;">${p.title}</a>
+                ${reviewBlock(s.reviewContent)}
+              </td>
+              <td style="padding:8px 8px;vertical-align:top;">${diffBadge(p.difficulty)}</td>
+              <td style="padding:8px 8px;text-align:center;vertical-align:top;">${statusIcon(s.solved)}</td>
+              <td style="padding:8px 8px;text-align:center;vertical-align:top;">${statusIcon(s.reviewed)}</td>
+            </tr>`
+    }
+
+    html_out += `
+          </tbody>
+        </table>
+
+        <!-- Flashcards -->
+        <p style="font-size:0.78rem;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:0.07em;margin:0 0 0.4rem;">🧠 Flashcards</p>
+        <p style="font-size:0.86rem;color:#374151;margin:0 0 1.1rem;"><strong>${week.cards.count} new cards</strong> — ${week.cards.topics}</p>
+
+        <!-- System Design -->
+        <p style="font-size:0.78rem;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:0.07em;margin:0 0 0.4rem;">🏗️ System Design</p>`
+
+    if (week.systemDesign) {
+      const d = dm[week.systemDesign.slug] || {}
+      html_out += `
+        <p style="font-size:0.86rem;color:#374151;margin:0;">
+          <a href="https://github.com/PierpaoloV/learning/tree/main/system-design/${week.systemDesign.slug}" target="_blank" style="color:#2E8B7A;font-weight:500;text-decoration:none;">${week.systemDesign.title}</a>
+          &nbsp;${statusIcon(d.written)}
+        </p>`
+    } else {
+      html_out += `<p style="font-size:0.86rem;color:#9ca3af;margin:0;">—</p>`
+    }
+
+    html_out += `
+      </div>
+      </details>`
+  }
+
+  html_out += `
+      </div>
+      </details>
+    </div>
+    </details>
+
+  </div>`
+
+  return html`${html_out}`
+}
+```

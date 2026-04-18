@@ -16,6 +16,8 @@ website:
         text: Publications
       - href: projects.qmd
         text: Projects
+      - href: learning.qmd
+        text: Learning
     right:
       - icon: github
         href: https://github.com/PierpaoloV
