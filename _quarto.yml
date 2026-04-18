@@ -5,6 +5,7 @@ project:
 website:
   title: "Pierpaolo Vendittelli"
   favicon: assets/logo.png
+  search: true
   navbar:
     logo: assets/logo.png
     left:
@@ -23,10 +24,10 @@ website:
         href: https://github.com/PierpaoloV
         aria-label: GitHub
       - icon: linkedin
-        href: https://www.linkedin.com/in/pierpaolovendittelli
+        href: https://www.linkedin.com/in/pierpaolo-vendittelli-66258414a/
         aria-label: LinkedIn
       - icon: envelope
-        href: mailto:pierpaolovendittelli.93@gmail.com
+        href: "mailto:pierpaolovendittelli.93@gmail.com"
         aria-label: Email
 
   page-footer:

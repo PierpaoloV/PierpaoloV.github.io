@@ -36,7 +36,7 @@ function isWritten(content) {
 }
 
 // Monthly schedule
-schedule = {
+schedule = ({
   year: 2026,
   monthLabel: "April – May 2026",
   weekStarts: ["2026-04-18","2026-04-25","2026-05-02","2026-05-09"],
@@ -80,7 +80,7 @@ schedule = {
       cards: { count: 2, topics: "contrastive learning, LLM agents" }
     }
   ]
-}
+})
 
 // Determine current week (0-indexed)
 currentWeekIdx = {
