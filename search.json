@@ -60,20 +60,20 @@
     "href": "index.html",
     "title": "Pierpaolo Vendittelli",
     "section": "",
-    "text": "Postdoc Researcher · Medical AI & Computational Pathology\n\n\n📍 Utrecht, The Netherlands  ·  Open to Italy · Remote EU · US-remote\n\nI build deep-learning systems for digital pathology — from whole-slide image segmentation to multi-center clinical AI pipelines. My current work focuses on Wilms tumor grading at Prinses Maxima Centre; my PhD at Radboud UMC produced validated models for pancreatic cancer prognosis (PLOS ONE 2024). I also design LLM-based automation tools for research workflows.\nI am actively seeking R&D / Applied Scientist / ML Engineer roles (finishing PhD June 2026).\n\nView CV Publications Projects GitHub"
+    "text": "Postdoc Researcher · Medical AI & Computational Pathology\n\n\n📍 Nijmegen, The Netherlands  ·  Open to Italy · Remote EU · US-remote\n\nI develop deep learning systems for digital pathology, spanning whole-slide image segmentation, multi-center clinical AI pipelines, prognostic modeling, and downstream applications of foundation models. My current work focuses on Wilms tumor grading at the Prinses Máxima Center for Pediatric Oncology. During my PhD at Radboud University Medical Center, I worked on pancreatic cancer prognosis, tumor segmentation, and tumor microenvironment quantification. I also design LLM-based automation tools to streamline research workflows. This portfolio was developed as an experimental project using modern LLM-assisted development tools. I am actively seeking R&D / Applied Scientist / ML Engineer roles (defense date: June 1st, 2026).\n\nView CV Publications Projects GitHub"
   },
   {
     "objectID": "index.html#research-interests",
     "href": "index.html#research-interests",
     "title": "Pierpaolo Vendittelli",
     "section": "Research Interests",
-    "text": "Research Interests\n\n\n\nComputational Pathology\nWhole-slide image analysis, multi-instance learning, segmentation, and survival prediction in oncology.\n\n\n\n\nMedical AI\nEnd-to-end pipelines for clinical deployment — reproducible, multi-center, interpretable.\n\n\n\n\nLLM Agents & Automation\nProduction LLM pipelines for research workflows (paper triage, summarisation, scoring)."
+    "text": "Research Interests\n\n\n\n🧠 Computational Pathology\nWhole-slide image analysis, multi-instance learning, segmentation, and survival prediction in oncology.\n\n\n\n\n⚙️ Clinical AI Systems\nEnd-to-end pipelines for clinical deployment — reproducible, multi-center, interpretable.\n\n\n\n\n🤖 LLM Agents & Automation\nProduction LLM pipelines for research workflows (paper triage, summarisation, scoring)."
   },
   {
     "objectID": "index.html#selected-skills",
     "href": "index.html#selected-skills",
     "title": "Pierpaolo Vendittelli",
     "section": "Selected Skills",
-    "text": "Selected Skills\nPython PyTorch MONAI HuggingFace Docker SLURM OpenAI API Anthropic API Git scikit-learn C++ SQL"
+    "text": "Selected Skills\nCore ML PyTorch scikit-learn MONAI\nSystems & Infra Docker SLURM\nLLM & APIs OpenAI API Anthropic API\nProgramming Python C++ SQL"
   }
 ]
