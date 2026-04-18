@@ -32,7 +32,7 @@ I am actively seeking **R&D / Applied Scientist / ML Engineer** roles (finishing
 
 :::
 ::: {.col-md-4 .text-center}
-![](assets/profile.png){.profile-photo alt="Pierpaolo Vendittelli"}
+![](assets/definitive_profile_picture_circle.png){.profile-photo alt="Pierpaolo Vendittelli"}
 :::
 :::
 :::
