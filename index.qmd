@@ -6,10 +6,13 @@ toc: false
 
 ::: {.hero}
 ::: {.container}
-::: {.row .align-items-center}
-::: {.col-md-8}
+::: {.hero-inner}
 
-# Pierpaolo Vendittelli
+::: {.hero-text}
+
+::: {.hero-name}
+Pierpaolo Vendittelli
+:::
 
 ::: {.subtitle}
 Postdoc Researcher · Medical AI & Computational Pathology
@@ -19,8 +22,8 @@ Postdoc Researcher · Medical AI & Computational Pathology
 📍 Nijmegen, The Netherlands &nbsp;·&nbsp; Open to Italy · Remote EU · US-remote
 :::
 
-I develop deep learning systems for digital pathology, spanning whole-slide image segmentation, multi-center clinical AI pipelines, prognostic modeling, and downstream applications of foundation models. 
-My current work focuses on Wilms tumor grading at the Prinses Máxima Center for Pediatric Oncology. During my PhD at Radboud University Medical Center, I worked on pancreatic cancer prognosis, tumor segmentation, and tumor microenvironment quantification. 
+I develop deep learning systems for digital pathology, spanning whole-slide image segmentation, multi-center clinical AI pipelines, prognostic modeling, and downstream applications of foundation models.
+My current work focuses on Wilms tumor grading at the Prinses Máxima Center for Pediatric Oncology. During my PhD at Radboud University Medical Center, I worked on pancreatic cancer prognosis, tumor segmentation, and tumor microenvironment quantification.
 I also design LLM-based automation tools to streamline research workflows.
 This portfolio was developed as an experimental project using modern LLM-assisted development tools.
 
@@ -34,9 +37,11 @@ I am actively seeking **R&D / Applied Scientist / ML Engineer** roles (defense d
 :::
 
 :::
-::: {.col-md-4 .text-center}
+
+::: {.hero-photo}
 ![](assets/definitive_profile_picture_circle.png){.profile-photo alt="Pierpaolo Vendittelli"}
 :::
+
 :::
 :::
 :::
