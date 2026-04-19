@@ -1,5 +1,6 @@
 ---
 title: ""
+image: assets/logo.png
 page-layout: full
 toc: false
 ---
@@ -39,7 +40,7 @@ I am actively seeking **R&D / Applied Scientist / ML Engineer** roles (defense d
 :::
 
 ::: {.hero-photo}
-![](assets/definitive_profile_picture_circle.png){.profile-photo alt="Pierpaolo Vendittelli"}
+![](assets/logo.png){.profile-photo alt="Pierpaolo Vendittelli Logo"}
 :::
 
 :::
