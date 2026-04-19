@@ -167,14 +167,16 @@ function bar(pct, label, sub) {
   </div>`
 }
 
-function reviewBlock(content) {
-  if (!content) return ''
-  const preview = content.slice(0, 1800) + (content.length > 1800 ? '\n...' : '')
-  return `
-  <details style="margin-top:6px;">
-    <summary style="cursor:pointer;color:var(--lp-accent);font-size:0.82rem;font-weight:500;user-select:none;">📝 Grader feedback</summary>
-    <div style="background:var(--lp-panel-muted);border-left:3px solid var(--lp-accent);padding:0.75rem 1rem;margin-top:6px;font-size:0.78rem;white-space:pre-wrap;font-family:'Fira Mono',monospace;line-height:1.5;border-radius:0 6px 6px 0;overflow-x:auto;color:var(--lp-text-soft);">${preview.replace(/</g,'&lt;').replace(/>/g,'&gt;')}</div>
-  </details>`
+function parseGrade(content) {
+  if (!content) return null
+  const m = content.match(/^Grade:\s*(\d+(?:\.\d+)?\/10)/im)
+  return m ? m[1] : null
+}
+
+function parseTakeHome(content) {
+  if (!content) return null
+  const m = content.match(/^Take-home:\s*(.+)/im)
+  return m ? m[1].trim() : null
 }
 ```
 
@@ -246,15 +248,20 @@ function reviewBlock(content) {
 
     for (const p of week.problems) {
       const s = sm[p.slug] || {}
+      const grade = parseGrade(s.reviewContent)
+      const takeHome = parseTakeHome(s.reviewContent)
       html_out += `
             <tr style="border-bottom:1px solid var(--lp-border-soft);">
               <td style="padding:8px 8px;vertical-align:top;">
                 <a href="https://github.com/PierpaoloV/learning/tree/main/leetcode/${p.slug}" target="_blank" style="color:var(--lp-accent);font-weight:500;text-decoration:none;">${p.title}</a>
-                ${reviewBlock(s.reviewContent)}
+                ${takeHome ? `<div style="font-size:0.78rem;color:var(--lp-text-muted);margin-top:4px;font-style:italic;line-height:1.4;">💡 ${takeHome}</div>` : ''}
               </td>
               <td style="padding:8px 8px;vertical-align:top;">${diffBadge(p.difficulty)}</td>
               <td style="padding:8px 8px;text-align:center;vertical-align:top;">${statusIcon(s.solved)}</td>
-              <td style="padding:8px 8px;text-align:center;vertical-align:top;">${statusIcon(s.reviewed)}</td>
+              <td style="padding:8px 8px;text-align:center;vertical-align:top;">
+                ${statusIcon(s.reviewed)}
+                ${grade ? `<span style="display:inline-block;background:var(--lp-accent);color:white;padding:1px 6px;border-radius:6px;font-size:0.72rem;font-weight:700;margin-left:4px;vertical-align:middle;">${grade}</span>` : ''}
+              </td>
             </tr>`
     }
 
