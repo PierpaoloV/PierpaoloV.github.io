@@ -149,7 +149,7 @@ function diffBadge(d) {
 
 function statusIcon(ok) {
   return ok ? `<span style="color:#22c55e;font-size:1rem;">✅</span>`
-             : `<span style="color:#d1d5db;font-size:1rem;">⬜</span>`
+             : `<span style="color:var(--lp-status-empty);font-size:1rem;">⬜</span>`
 }
 
 function bar(pct, label, sub) {
@@ -157,10 +157,10 @@ function bar(pct, label, sub) {
   <div style="margin-bottom:1.1rem;">
     <div style="display:flex;justify-content:space-between;margin-bottom:5px;">
       <span style="font-weight:600;font-size:0.9rem;">${label}</span>
-      <span style="color:#6b7280;font-size:0.85rem;">${sub}</span>
+      <span style="color:var(--lp-text-muted);font-size:0.85rem;">${sub}</span>
     </div>
-    <div style="background:#e5e7eb;border-radius:999px;height:13px;overflow:hidden;">
-      <div style="background:linear-gradient(90deg,#2E8B7A,#52b6a8);width:${pct}%;height:100%;border-radius:999px;transition:width 0.6s ease;min-width:${pct>0?'6px':'0'};"></div>
+    <div style="background:var(--lp-progress-bg);border-radius:999px;height:13px;overflow:hidden;">
+      <div style="background:linear-gradient(90deg,var(--lp-accent),var(--lp-accent-soft));width:${pct}%;height:100%;border-radius:999px;transition:width 0.6s ease;min-width:${pct>0?'6px':'0'};"></div>
     </div>
   </div>`
 }
@@ -170,8 +170,8 @@ function reviewBlock(content) {
   const preview = content.slice(0, 1800) + (content.length > 1800 ? '\n...' : '')
   return `
   <details style="margin-top:6px;">
-    <summary style="cursor:pointer;color:#2E8B7A;font-size:0.82rem;font-weight:500;user-select:none;">📝 Grader feedback</summary>
-    <div style="background:#f8fafc;border-left:3px solid #2E8B7A;padding:0.75rem 1rem;margin-top:6px;font-size:0.78rem;white-space:pre-wrap;font-family:'Fira Mono',monospace;line-height:1.5;border-radius:0 6px 6px 0;overflow-x:auto;">${preview.replace(/</g,'&lt;').replace(/>/g,'&gt;')}</div>
+    <summary style="cursor:pointer;color:var(--lp-accent);font-size:0.82rem;font-weight:500;user-select:none;">📝 Grader feedback</summary>
+    <div style="background:var(--lp-panel-muted);border-left:3px solid var(--lp-accent);padding:0.75rem 1rem;margin-top:6px;font-size:0.78rem;white-space:pre-wrap;font-family:'Fira Mono',monospace;line-height:1.5;border-radius:0 6px 6px 0;overflow-x:auto;color:var(--lp-text-soft);">${preview.replace(/</g,'&lt;').replace(/>/g,'&gt;')}</div>
   </details>`
 }
 ```
@@ -192,8 +192,8 @@ function reviewBlock(content) {
   <div style="max-width:860px;margin:auto;font-family:system-ui,sans-serif;">
 
     <!-- Progress bars -->
-    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:1.5rem 1.75rem;margin-bottom:2rem;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
-      <h3 style="margin:0 0 1.2rem;font-size:1rem;color:#374151;text-transform:uppercase;letter-spacing:0.06em;">📊 Progress</h3>
+    <div style="background:var(--lp-panel-bg);border:1px solid var(--lp-border);border-radius:14px;padding:1.5rem 1.75rem;margin-bottom:2rem;box-shadow:var(--lp-shadow);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);">
+      <h3 style="margin:0 0 1.2rem;font-size:1rem;color:var(--lp-text-soft);text-transform:uppercase;letter-spacing:0.06em;">📊 Progress</h3>
       ${bar(wp.pct, `This week — ${weekLabel}`, `${wp.solved} / ${wp.total} problems`)}
       ${bar(mp.pct, `Month 1 — ${schedule.monthLabel}`, `${mp.solved} / ${mp.total} problems · ${schedule.weeks.flatMap(w=>w.problems).filter(p=>sm[p.slug]?.reviewed).length} reviewed`)}
     </div>
@@ -207,7 +207,7 @@ function reviewBlock(content) {
 
       <!-- Month -->
       <details open>
-      <summary style="cursor:pointer;font-size:1.05rem;font-weight:600;padding:0.35rem 0;color:#374151;">
+      <summary style="cursor:pointer;font-size:1.05rem;font-weight:600;padding:0.35rem 0;color:var(--lp-text-soft);">
         📅 ${schedule.monthLabel}
       </summary>
       <div style="padding-left:1rem;margin-top:0.5rem;">
@@ -221,19 +221,19 @@ function reviewBlock(content) {
     const isOpen = wi === currentWeekIdx ? "open" : ""
 
     html_out += `
-      <details ${isOpen} style="margin-bottom:1rem;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;">
-      <summary style="cursor:pointer;font-size:0.97rem;font-weight:600;padding:0.75rem 1rem;background:#f9fafb;color:#111;list-style:none;display:flex;align-items:center;gap:0.5rem;">
+      <details ${isOpen} style="margin-bottom:1rem;border:1px solid var(--lp-border);border-radius:10px;overflow:hidden;background:var(--lp-panel-bg);">
+      <summary style="cursor:pointer;font-size:0.97rem;font-weight:600;padding:0.75rem 1rem;background:var(--lp-panel-soft);color:var(--lp-text);list-style:none;display:flex;align-items:center;gap:0.5rem;">
         <span>${icon}</span>
         <span>${week.label}</span>
-        <span style="margin-left:auto;color:#6b7280;font-weight:400;font-size:0.85rem;">${solved}/${total} solved</span>
+        <span style="margin-left:auto;color:var(--lp-text-muted);font-weight:400;font-size:0.85rem;">${solved}/${total} solved</span>
       </summary>
       <div style="padding:1rem 1.25rem;">
 
         <!-- LeetCode -->
-        <p style="font-size:0.78rem;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:0.07em;margin:0 0 0.6rem;">💻 LeetCode</p>
-        <table style="width:100%;border-collapse:collapse;font-size:0.86rem;margin-bottom:1.25rem;">
+        <p style="font-size:0.78rem;font-weight:700;color:var(--lp-text-faint);text-transform:uppercase;letter-spacing:0.07em;margin:0 0 0.6rem;">💻 LeetCode</p>
+        <table style="width:100%;border-collapse:collapse;font-size:0.86rem;margin-bottom:1.25rem;color:var(--lp-text-soft);">
           <thead>
-            <tr style="border-bottom:2px solid #e5e7eb;color:#6b7280;font-size:0.8rem;">
+            <tr style="border-bottom:2px solid var(--lp-border);color:var(--lp-text-muted);font-size:0.8rem;">
               <th style="padding:5px 8px;text-align:left;font-weight:600;">Problem</th>
               <th style="padding:5px 8px;text-align:left;font-weight:600;">Difficulty</th>
               <th style="padding:5px 8px;text-align:center;font-weight:600;">Solved</th>
@@ -245,9 +245,9 @@ function reviewBlock(content) {
     for (const p of week.problems) {
       const s = sm[p.slug] || {}
       html_out += `
-            <tr style="border-bottom:1px solid #f3f4f6;">
+            <tr style="border-bottom:1px solid var(--lp-border-soft);">
               <td style="padding:8px 8px;vertical-align:top;">
-                <a href="https://github.com/PierpaoloV/learning/tree/main/leetcode/${p.slug}" target="_blank" style="color:#2E8B7A;font-weight:500;text-decoration:none;">${p.title}</a>
+                <a href="https://github.com/PierpaoloV/learning/tree/main/leetcode/${p.slug}" target="_blank" style="color:var(--lp-accent);font-weight:500;text-decoration:none;">${p.title}</a>
                 ${reviewBlock(s.reviewContent)}
               </td>
               <td style="padding:8px 8px;vertical-align:top;">${diffBadge(p.difficulty)}</td>
@@ -261,21 +261,21 @@ function reviewBlock(content) {
         </table>
 
         <!-- Flashcards -->
-        <p style="font-size:0.78rem;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:0.07em;margin:0 0 0.4rem;">🧠 Flashcards</p>
-        <p style="font-size:0.86rem;color:#374151;margin:0 0 1.1rem;"><strong>${week.cards.count} new cards</strong> — ${week.cards.topics}</p>
+        <p style="font-size:0.78rem;font-weight:700;color:var(--lp-text-faint);text-transform:uppercase;letter-spacing:0.07em;margin:0 0 0.4rem;">🧠 Flashcards</p>
+        <p style="font-size:0.86rem;color:var(--lp-text-soft);margin:0 0 1.1rem;"><strong>${week.cards.count} new cards</strong> — ${week.cards.topics}</p>
 
         <!-- System Design -->
-        <p style="font-size:0.78rem;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:0.07em;margin:0 0 0.4rem;">🏗️ System Design</p>`
+        <p style="font-size:0.78rem;font-weight:700;color:var(--lp-text-faint);text-transform:uppercase;letter-spacing:0.07em;margin:0 0 0.4rem;">🏗️ System Design</p>`
 
     if (week.systemDesign) {
       const d = dm[week.systemDesign.slug] || {}
       html_out += `
-        <p style="font-size:0.86rem;color:#374151;margin:0;">
-          <a href="https://github.com/PierpaoloV/learning/tree/main/system-design/${week.systemDesign.slug}" target="_blank" style="color:#2E8B7A;font-weight:500;text-decoration:none;">${week.systemDesign.title}</a>
+        <p style="font-size:0.86rem;color:var(--lp-text-soft);margin:0;">
+          <a href="https://github.com/PierpaoloV/learning/tree/main/system-design/${week.systemDesign.slug}" target="_blank" style="color:var(--lp-accent);font-weight:500;text-decoration:none;">${week.systemDesign.title}</a>
           &nbsp;${statusIcon(d.written)}
         </p>`
     } else {
-      html_out += `<p style="font-size:0.86rem;color:#9ca3af;margin:0;">—</p>`
+      html_out += `<p style="font-size:0.86rem;color:var(--lp-text-faint);margin:0;">—</p>`
     }
 
     html_out += `

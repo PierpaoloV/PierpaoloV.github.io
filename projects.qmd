@@ -15,7 +15,7 @@ Multi-agent pipeline (OpenAI API, Python): weekly arXiv / PubMed scan → LLM su
 
 Tech: Python · OpenAI API · Gmail API · SQLite · GitHub Actions 
 
-[GitHub](https://github.com/PierpaoloV/weekly_ai_paper){.btn-secondary-custom style="font-size:0.85rem;padding:0.25rem 0.75rem;"}
+[GitHub](https://github.com/PierpaoloV/weekly_ai_paper){.btn-secondary-custom .btn-sm}
 :::
 :::
 
@@ -31,7 +31,7 @@ Automated job-hunting pipeline that fetches LinkedIn, Indeed, and Glassdoor aler
 
 Tech: Python · OpenAI API · Gmail API · SQLite · GitHub Actions · Telegram Bot API
 
-[GitHub](https://github.com/PierpaoloV/job-agent){.btn-secondary-custom style="font-size:0.85rem;padding:0.25rem 0.75rem;"}
+[GitHub](https://github.com/PierpaoloV/job-agent){.btn-secondary-custom .btn-sm}
 :::
 :::
 
@@ -50,8 +50,8 @@ The work also evaluates multiple deep learning feature extraction strategies for
 The findings demonstrate the potential of computational pathology to improve the speed, consistency, and clinical relevance of histopathological assessment in pancreatic cancer.
 Overall, the thesis contributes scalable and interpretable AI-based tools that support prognostic modeling and future precision oncology research.
 
-[GitHub](https://github.com/PierpaoloV/PhD-Dissertation){.btn-secondary-custom style="font-size:0.85rem;padding:0.25rem 0.75rem;"}
-[Download PDF](https://github.com/PierpaoloV/PhD-Dissertation/raw/main/PhD_Dissertation.pdf){.btn-secondary-custom style="font-size:0.85rem;padding:0.25rem 0.75rem;"}
+[GitHub](https://github.com/PierpaoloV/PhD-Dissertation){.btn-secondary-custom .btn-sm}
+[Download PDF](https://github.com/PierpaoloV/PhD-Dissertation/raw/main/PhD_Dissertation.pdf){.btn-secondary-custom .btn-sm}
 
 :::
 :::
@@ -68,8 +68,8 @@ A Docker-based pipeline for training and deploying deep learning segmentation mo
 
 Tech: PyTorch · Docker · HuggingFace · Python
 
-[GitHub](https://github.com/PierpaoloV/pathology-segmentation-pipeline){.btn-secondary-custom style="font-size:0.85rem;padding:0.25rem 0.75rem;"}
-[DockerHub](https://hub.docker.com/r/pierpaolov93/pathology-pipeline){.btn-secondary-custom style="font-size:0.85rem;padding:0.25rem 0.75rem;"}
+[GitHub](https://github.com/PierpaoloV/pathology-segmentation-pipeline){.btn-secondary-custom .btn-sm}
+[DockerHub](https://hub.docker.com/r/pierpaolov93/pathology-pipeline){.btn-secondary-custom .btn-sm}
 :::
 :::
 
@@ -85,7 +85,7 @@ Deep-learning and multiple-instance learning pipelines for anaplasia detection a
 
 Tech: PyTorch · MIL · Docker · multi-center data pipelines
 
-[GitHub](https://github.com/PierpaoloV/wilms-anaplasia-mil){.btn-secondary-custom style="font-size:0.85rem;padding:0.25rem 0.75rem;"}
+[GitHub](https://github.com/PierpaoloV/wilms-anaplasia-mil){.btn-secondary-custom .btn-sm}
 
 :::
 :::
@@ -102,7 +102,7 @@ Developed an automated whole-slide image analysis pipeline for pancreatic cancer
 
 Tech: PyTorch · MONAI · Docker · SLURM · Python
 
-[GitHub](https://github.com/DIAGNijmegen/automatic-tsr-quantification-for-pdac){.btn-secondary-custom style="font-size:0.85rem;padding:0.25rem 0.75rem;"}
+[GitHub](https://github.com/DIAGNijmegen/automatic-tsr-quantification-for-pdac){.btn-secondary-custom .btn-sm}
 
 :::
 :::
@@ -119,7 +119,7 @@ Benchmarked ResU-Net, cGAN, and CycleGAN for T1↔FLAIR MRI synthesis on WMH and
 
 Tech: Keras · TensorFlow · Python · medical image registration
 
-[GitHub](https://github.com/PierpaoloV/mri-brain-synthesis-from-scratch){.btn-secondary-custom style="font-size:0.85rem;padding:0.25rem 0.75rem;"}
+[GitHub](https://github.com/PierpaoloV/mri-brain-synthesis-from-scratch){.btn-secondary-custom .btn-sm}
 
 :::
 :::
