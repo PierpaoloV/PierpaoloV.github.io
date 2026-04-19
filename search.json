@@ -16,21 +16,21 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Medical AI, Computational Pathology, and ML Engineering",
+    "title": "Pierpaolo Vendittelli",
     "section": "",
     "text": "Pierpaolo Vendittelli\n\n\nPostdoc Researcher · Medical AI & Computational Pathology\n\n\n📍 Nijmegen, The Netherlands  ·  Open to Italy · Remote EU · US-remote\n\nI am Pierpaolo Vendittelli, a postdoctoral researcher developing deep-learning systems for digital pathology, spanning whole-slide image segmentation, multi-center clinical AI pipelines, prognostic modeling, and downstream applications of foundation models. My current work focuses on Wilms tumor grading at the Prinses Maxima Center for Pediatric Oncology. During my PhD at Radboud University Medical Center, I worked on pancreatic cancer prognosis, tumor segmentation, and tumor microenvironment quantification. I also design LLM-based automation tools to streamline research workflows. This portfolio brings together my publications, projects, CV, and ongoing learning log.\nOpen to Applied Scientist, ML Engineer, and R&D roles across medical AI and applied ML. PhD defense: June 1, 2026.\n\n  View CV"
   },
   {
     "objectID": "index.html#research-interests",
     "href": "index.html#research-interests",
-    "title": "Medical AI, Computational Pathology, and ML Engineering",
+    "title": "Pierpaolo Vendittelli",
     "section": "Research Interests",
     "text": "Research Interests\n\n\n\n\n\n\n\n\n\nComputational Pathology\nWhole-slide image analysis, multi-instance learning, segmentation, and survival prediction in oncology.\n\n\n\n\n\n\n\n\n\n\n\nClinical AI Systems\nEnd-to-end pipelines for clinical deployment — reproducible, multi-center, interpretable.\n\n\n\n\n\n\n\n\n\n\n\nLLM Agents & Automation\nProduction LLM pipelines for research workflows (paper triage, summarisation, scoring)."
   },
   {
     "objectID": "index.html#selected-skills",
     "href": "index.html#selected-skills",
-    "title": "Medical AI, Computational Pathology, and ML Engineering",
+    "title": "Pierpaolo Vendittelli",
     "section": "Selected Skills",
     "text": "Selected Skills\n\n\nCore ML\n\n\nPyTorch scikit-learn MONAI\n\n\n\n\nSystems & Infra\n\n\nDocker SLURM\n\n\n\n\nLLM & APIs\n\n\nOpenAI API Anthropic API\n\n\n\n\nProgramming\n\n\nPython C++ SQL"
   },
