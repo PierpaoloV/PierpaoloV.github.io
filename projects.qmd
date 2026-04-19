@@ -1,5 +1,7 @@
 ---
 title: "Projects"
+title-meta: "Projects | Pierpaolo Vendittelli"
+description: "Selected projects by Pierpaolo Vendittelli across medical AI, digital pathology, LLM agents, and applied machine learning systems."
 toc: false
 ---
 

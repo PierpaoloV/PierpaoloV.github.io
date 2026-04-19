@@ -46,8 +46,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.1rem;
 }
 
-/* Hide the empty Quarto title block (title: "" in frontmatter) */
-.quarto-title-block {
+/* Hide the title block only on the homepage, which uses the custom hero */
+.page-home .quarto-title-block {
   display: none;
 }
 

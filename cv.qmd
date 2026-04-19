@@ -1,5 +1,7 @@
 ---
 title: "Curriculum Vitae"
+title-meta: "CV | Pierpaolo Vendittelli"
+description: "Curriculum vitae of Pierpaolo Vendittelli, postdoctoral researcher in medical AI and computational pathology."
 toc: true
 toc-depth: 2
 ---

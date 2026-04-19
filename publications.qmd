@@ -1,5 +1,7 @@
 ---
 title: "Publications"
+title-meta: "Publications | Pierpaolo Vendittelli"
+description: "Publications by Pierpaolo Vendittelli in digital pathology, computational pathology, pancreatic cancer AI, and multimodal clinical AI."
 toc: false
 ---
 

@@ -1,8 +1,10 @@
 ---
-title: ""
+title: "Medical AI, Computational Pathology, and ML Engineering"
+title-meta: "Pierpaolo Vendittelli | Medical AI, Computational Pathology, and ML Engineering"
 description: "Postdoc researcher developing deep-learning systems for digital pathology — whole-slide image analysis, multi-center clinical AI pipelines, and LLM-based automation for research workflows."
 image: assets/logo.png
 page-layout: full
+body-classes: page-home
 toc: false
 ---
 
@@ -24,10 +26,9 @@ Postdoc Researcher · Medical AI & Computational Pathology
 📍 Nijmegen, The Netherlands &nbsp;·&nbsp; Open to Italy · Remote EU · US-remote
 :::
 
-I develop deep learning systems for digital pathology, spanning whole-slide image segmentation, multi-center clinical AI pipelines, prognostic modeling, and downstream applications of foundation models.
-My current work focuses on Wilms tumor grading at the Prinses Máxima Center for Pediatric Oncology. During my PhD at Radboud University Medical Center, I worked on pancreatic cancer prognosis, tumor segmentation, and tumor microenvironment quantification.
-I also design LLM-based automation tools to streamline research workflows.
-This portfolio was developed as an experimental project using modern LLM-assisted development tools.
+I am Pierpaolo Vendittelli, a postdoctoral researcher developing deep-learning systems for digital pathology, spanning whole-slide image segmentation, multi-center clinical AI pipelines, prognostic modeling, and downstream applications of foundation models.
+My current work focuses on Wilms tumor grading at the Prinses Maxima Center for Pediatric Oncology. During my PhD at Radboud University Medical Center, I worked on pancreatic cancer prognosis, tumor segmentation, and tumor microenvironment quantification.
+I also design LLM-based automation tools to streamline research workflows. This portfolio brings together my publications, projects, CV, and ongoing learning log.
 
 I am actively seeking **R&D / Applied Scientist / ML Engineer** roles (defense date: June 1st, 2026).
 
@@ -47,6 +48,49 @@ I am actively seeking **R&D / Applied Scientist / ML Engineer** roles (defense d
 :::
 :::
 :::
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Pierpaolo Vendittelli",
+  "url": "https://pierpaolov.github.io/",
+  "image": "https://pierpaolov.github.io/assets/definitive_profile_picture_circle.png",
+  "jobTitle": "Postdoctoral Researcher in Medical AI and Computational Pathology",
+  "description": "Postdoctoral researcher developing deep-learning systems for digital pathology, clinical AI pipelines, and LLM-based automation for research workflows.",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Prinses Maxima Center for Pediatric Oncology"
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Radboud University Medical Center"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Girona"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Cassino and Southern Lazio"
+    }
+  ],
+  "sameAs": [
+    "https://github.com/PierpaoloV",
+    "https://www.linkedin.com/in/pierpaolo-vendittelli-66258414a/"
+  ],
+  "knowsAbout": [
+    "Computational pathology",
+    "Medical AI",
+    "Digital pathology",
+    "Whole-slide image analysis",
+    "Machine learning",
+    "Deep learning",
+    "LLM agents"
+  ]
+}
+</script>
 
 ---
 

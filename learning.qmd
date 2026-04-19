@@ -1,5 +1,7 @@
 ---
 title: "Learning"
+title-meta: "Learning Log | Pierpaolo Vendittelli"
+description: "Learning log of Pierpaolo Vendittelli covering machine learning fundamentals, LeetCode practice, and system design progress."
 toc: false
 ---
 
