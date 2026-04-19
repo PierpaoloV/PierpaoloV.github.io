@@ -1,11 +1,23 @@
 project:
   type: website
   output-dir: _site
+  render:
+    - index.qmd
+    - cv.qmd
+    - publications.qmd
+    - projects.qmd
+    - learning.qmd
+  resources:
+    - robots.txt
 
 website:
   title: "Pierpaolo Vendittelli"
+  site-url: https://pierpaolov.github.io
+  repo-url: https://github.com/PierpaoloV/PierpaoloV.github.io
   favicon: assets/logo.png
   search: true
+  open-graph: true
+  twitter-card: true
   navbar:
     logo: assets/logo.png
     left:
@@ -19,16 +31,6 @@ website:
         text: Projects
       - href: learning.qmd
         text: Learning
-    right:
-      - icon: github
-        href: https://github.com/PierpaoloV
-        aria-label: GitHub
-      - icon: linkedin
-        href: https://www.linkedin.com/in/pierpaolo-vendittelli-66258414a/
-        aria-label: LinkedIn
-      - icon: envelope
-        href: "mailto:pierpaolovendittelli.93@gmail.com"
-        aria-label: Email
 
   google-analytics: "G-7EYEDKW974"
 
@@ -42,8 +44,12 @@ format:
       light: cosmo
       dark: darkly
     css: styles.css
+    canonical-url: true
     include-in-header:
       - text: |
+          <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+          <link rel="me" href="https://github.com/PierpaoloV">
+          <link rel="me" href="https://www.linkedin.com/in/pierpaolo-vendittelli">
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
           <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">

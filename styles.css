@@ -161,6 +161,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   gap: 0.75rem;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .btn-primary-custom {
@@ -204,6 +205,47 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(5, 150, 105, 0.35);
+}
+
+.hero-links {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
+.hero-icon-link {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 2px solid rgba(5, 150, 105, 0.35);
+  color: #059669;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: rgba(5, 150, 105, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.hero-icon-link i {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.hero-icon-link svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  display: block;
+}
+
+.hero-icon-link:hover {
+  color: white;
+  background-color: #059669;
+  border-color: #059669;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(5, 150, 105, 0.28);
+  text-decoration: none;
 }
 
 /* ─── Section cards ───────────────────────────────────────────────────────── */
@@ -614,6 +656,19 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 6px 16px rgba(52, 211, 153, 0.4);
 }
 
+[data-bs-theme="dark"] .hero-icon-link {
+  color: #34d399;
+  border-color: rgba(52, 211, 153, 0.35);
+  background: rgba(52, 211, 153, 0.08);
+}
+
+[data-bs-theme="dark"] .hero-icon-link:hover {
+  color: #0f172a;
+  background-color: #34d399;
+  border-color: #34d399;
+  box-shadow: 0 6px 16px rgba(52, 211, 153, 0.3);
+}
+
 /* Glassmorphism cards */
 [data-bs-theme="dark"] .section-card {
   background: rgba(30, 41, 59, 0.55);
@@ -795,6 +850,7 @@ h1, h2, h3, h4, h5, h6 {
   .hero-photo { order: -1; }
 
   .cta-buttons { justify-content: center; }
+  .hero-links { justify-content: center; }
 
   .hero-name { font-size: 2.2rem; }
   .hero .subtitle { font-size: 1.05rem; }
@@ -814,6 +870,11 @@ h1, h2, h3, h4, h5, h6 {
   .btn-secondary-custom {
     font-size: 0.88rem;
     padding: 0.45rem 1rem;
+  }
+
+  .hero-links {
+    width: 100%;
+    justify-content: center;
   }
 
   .skill-badge { font-size: 0.78rem; padding: 0.15rem 0.5rem; }

@@ -30,14 +30,38 @@ I am Pierpaolo Vendittelli, a postdoctoral researcher developing deep-learning s
 My current work focuses on Wilms tumor grading at the Prinses Maxima Center for Pediatric Oncology. During my PhD at Radboud University Medical Center, I worked on pancreatic cancer prognosis, tumor segmentation, and tumor microenvironment quantification.
 I also design LLM-based automation tools to streamline research workflows. This portfolio brings together my publications, projects, CV, and ongoing learning log.
 
-I am actively seeking **R&D / Applied Scientist / ML Engineer** roles (defense date: June 1st, 2026).
+Open to **Applied Scientist, ML Engineer, and R&D** roles across medical AI and applied ML. PhD defense: June 1, 2026.
 
-::: {.cta-buttons}
-<a class="btn-primary-custom" href="cv.qmd">View CV</a>
-<a class="btn-secondary-custom" href="publications.qmd">Publications</a>
-<a class="btn-secondary-custom" href="projects.qmd">Projects</a>
-<a class="btn-secondary-custom" href="https://github.com/PierpaoloV" target="_blank">GitHub</a>
-:::
+```{=html}
+<div class="cta-buttons">
+  <a class="btn-primary-custom" href="cv.qmd">View CV</a>
+  <div class="hero-links" aria-label="External profiles and contact">
+    <a class="hero-icon-link" href="https://github.com/PierpaoloV" target="_blank" rel="me noopener" aria-label="GitHub">
+      <i class="bi bi-github" aria-hidden="true"></i>
+    </a>
+    <a class="hero-icon-link" href="https://www.linkedin.com/in/pierpaolo-vendittelli" target="_blank" rel="me noopener" aria-label="LinkedIn">
+      <i class="bi bi-linkedin" aria-hidden="true"></i>
+    </a>
+    <a class="hero-icon-link" href="https://scholar.google.com/citations?user=C0h0smwAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" aria-label="Google Scholar">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 3L2 8l10 5 8-4v6h2V8L12 3Z" fill="currentColor"/>
+        <path d="M6 11.5v4.1c0 1.1 2.7 2.4 6 2.4s6-1.3 6-2.4v-4.1l-6 3-6-3Z" fill="currentColor" opacity="0.9"/>
+      </svg>
+    </a>
+    <a class="hero-icon-link" href="https://orcid.org/0000-0001-6712-3708" target="_blank" rel="noopener" aria-label="ORCID">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="10" fill="currentColor"/>
+        <rect x="7.1" y="9" width="1.6" height="6" rx="0.2" fill="#0f172a"/>
+        <circle cx="7.9" cy="7.1" r="0.95" fill="#0f172a"/>
+        <path d="M11 9h2.3a3.2 3.2 0 1 1 0 6.4H11V9Zm1.6 1.5v3.4h.6a1.7 1.7 0 1 0 0-3.4h-.6Z" fill="#0f172a"/>
+      </svg>
+    </a>
+    <a class="hero-icon-link" href="mailto:pierpaolo.vendittelli93@gmail.com" aria-label="Email">
+      <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+    </a>
+  </div>
+</div>
+```
 
 :::
 
@@ -78,7 +102,9 @@ I am actively seeking **R&D / Applied Scientist / ML Engineer** roles (defense d
   ],
   "sameAs": [
     "https://github.com/PierpaoloV",
-    "https://www.linkedin.com/in/pierpaolo-vendittelli-66258414a/"
+    "https://www.linkedin.com/in/pierpaolo-vendittelli",
+    "https://scholar.google.com/citations?user=C0h0smwAAAAJ&hl=en&oi=ao",
+    "https://orcid.org/0000-0001-6712-3708"
   ],
   "knowsAbout": [
     "Computational pathology",
