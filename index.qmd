@@ -1,5 +1,5 @@
 ---
-title: "Medical AI, Computational Pathology, and ML Engineering"
+title: "Pierpaolo Vendittelli"
 title-meta: "Pierpaolo Vendittelli | Medical AI, Computational Pathology, and ML Engineering"
 description: "Postdoc researcher developing deep-learning systems for digital pathology — whole-slide image analysis, multi-center clinical AI pipelines, and LLM-based automation for research workflows."
 image: assets/logo.png
