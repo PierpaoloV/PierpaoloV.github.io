@@ -379,7 +379,7 @@ gtag('config', 'G-7EYEDKW974', { 'anonymize_ip': true});
 <p>Weekly AI Paper-Triage Agent</p>
 </div>
 <div class="pub-meta">
-<p>Multi-agent pipeline (OpenAI API, Python): weekly arXiv / PubMed scan → LLM summarisation → interest-based scoring (0–10) → automated email digest. In active personal use since 2024. Demonstrates production LLM-agent design: scheduler, structured output, email delivery, and prompt-engineered relevance scoring.</p>
+<p>Automated literature monitoring pipeline that fetches weekly arXiv and PubMed papers, performs LLM-based summarisation via OpenAI API (gpt-4o-mini), and scores each paper 0–10 based on a personalised interest profile. Results are compiled into an email digest, with deduplication and structured outputs handled in Python. Runs on GitHub Actions once per week with no manual intervention, and has been in active personal use since 2024.</p>
 <p>Tech: Python · OpenAI API · Gmail API · SQLite · GitHub Actions</p>
 <p><a href="https://github.com/PierpaoloV/weekly_ai_paper" class="btn-secondary-custom btn-sm">GitHub</a></p>
 </div>
@@ -392,7 +392,7 @@ gtag('config', 'G-7EYEDKW974', { 'anonymize_ip': true});
 <p>AI Job Search Agent</p>
 </div>
 <div class="pub-meta">
-<p>Automated job-hunting pipeline that fetches LinkedIn, Indeed, and Glassdoor alert emails via Gmail API, parses structured job listings, deduplicates against a SQLite store, and ranks each role 0–1 with GPT-4o-mini against a personal résumé and preferences profile. Top matches are pushed as a ranked Telegram digest. Runs on GitHub Actions three times per day with no manual intervention.</p>
+<p>Automated job-hunting pipeline that fetches LinkedIn, Indeed, and Glassdoor alert emails via Gmail API, parses structured job listings, deduplicates against a SQLite store, and ranks each role 0–1 with Haiku4.5 against a personal résumé and preferences profile. Top matches are pushed as a ranked Telegram digest. Runs on GitHub Actions three times per day with no manual intervention.</p>
 <p>Tech: Python · OpenAI API · Gmail API · SQLite · GitHub Actions · Telegram Bot API</p>
 <p><a href="https://github.com/PierpaoloV/job-agent" class="btn-secondary-custom btn-sm">GitHub</a></p>
 </div>
@@ -427,25 +427,38 @@ gtag('config', 'G-7EYEDKW974', { 'anonymize_ip': true});
 <p>Postdoc Research · Prinses Maxima Centre · 2025 - Present</p>
 </div>
 <div class="pub-title">
-<p>Wilms Tumor Anaplasia Grading</p>
+<p>Wilms Tumor Anaplasia Classification</p>
 </div>
 <div class="pub-meta">
-<p>Deep-learning and multiple-instance learning pipelines for anaplasia detection and clinical outcome prediction from pediatric kidney tumor WSIs. Multi-center dataset integration across European collaborating hospitals.</p>
+<p>Weakly supervised deep learning pipeline for anaplasia classification in Wilms tumor WSIs, using foundation model features (Virchow) and multiple instance learning (AMIL) alongside slide-level encodings (PRISM). Trained on a multi-center dataset (24 patients, 188 WSIs) with patient-wise cross-validation to prevent leakage, achieving AUC &gt; 0.85 across configurations. Integrates feature extraction, MIL aggregation, and robust evaluation for clinical outcome prediction, with planned external validation to assess generalisability.</p>
 <p>Tech: PyTorch · MIL · Docker · multi-center data pipelines</p>
 <p><a href="https://github.com/PierpaoloV/wilms-anaplasia-mil" class="btn-secondary-custom btn-sm">GitHub</a></p>
 </div>
 </div>
 <div class="pub-entry">
 <div class="pub-venue">
-<p>PhD Research · Radboud UMC · 2021 – 2024</p>
+<p>PhD Research · Radboud University Medical Center · 2021 – 2024</p>
 </div>
 <div class="pub-title">
 <p>Automatic Quantification of Tumor-Stroma Ratio as a prognostic biomarker for pancreatic cancer.</p>
 </div>
 <div class="pub-meta">
-<p>Developed an automated whole-slide image analysis pipeline for pancreatic cancer within the EU Horizon 2020 PANCAIM consortium. Using multi-class U-Net models for tissue and tumor segmentation, the method achieved external Dice scores up to 0.86 across a multi-center cohort of 368 patients from 25 Dutch pathology laboratories. The extracted tumor-stroma ratio biomarker showed prognostic value, reaching an AUC of 0.61 for 6-month survival prediction.</p>
+<p>Automated WSI analysis pipeline for pancreatic cancer, combining deep learning–based segmentation of tumor epithelium, tumor bulk, and stroma with downstream biomarker extraction. Built a multi-step system leveraging IHC-guided supervision and U-Net models to enable fully automatic tumor–stroma ratio (TSR) quantification across multi-center datasets. Achieved robust external segmentation performance (Dice up to 0.86) and demonstrated TSR as a reproducible prognostic feature (AUC ~0.61 for 6-month survival).</p>
 <p>Tech: PyTorch · MONAI · Docker · SLURM · Python</p>
 <p><a href="https://github.com/DIAGNijmegen/automatic-tsr-quantification-for-pdac" class="btn-secondary-custom btn-sm">GitHub</a></p>
+</div>
+</div>
+<div class="pub-entry">
+<div class="pub-venue">
+<p>PhD Research · Radboud University Medical Center · 2021 – 2024</p>
+</div>
+<div class="pub-title">
+<p>Automatic Tumor segmentation in PDAC WSIs</p>
+</div>
+<div class="pub-meta">
+<p>Automatic tumor segmentation pipeline for pancreatic cancer WSIs, using multi-task convolutional neural networks to jointly model detection and segmentation. Evaluated across multiple resolutions with patch-based training, showing that lower-resolution contextual features improve performance. The multi-task architecture reduced false positives and achieved Dice up to ~0.93 on cross-validation, outperforming single-task baselines. Designed as a foundational component for downstream biomarker extraction and clinical AI pipelines.</p>
+<p>Tech: Python · PyTorch · Docker · SLURM</p>
+<p><a href="#" class="btn-secondary-custom btn-sm">GitHub</a></p>
 </div>
 </div>
 <div class="pub-entry">
