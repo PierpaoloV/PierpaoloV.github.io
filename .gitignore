@@ -1,4 +1,5 @@
 /.quarto/
 /_site/
-
+details.md
+implementation_plan.md
 **/*.quarto_ipynb

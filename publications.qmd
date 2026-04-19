@@ -63,6 +63,8 @@ Systematic review of the current role of AI for pancreatic cancer diagnosis and 
 ::: {.pub-summary}
 Multi-task U-Net with auxiliary classification head for coarse pancreatic tumour area segmentation; classification head reduced false positives.
 :::
+::: {.pub-links}
+[PDF](assets/papers/spie_2022.pdf){.btn-secondary-custom .btn-sm target="_blank"}
 :::
 
 ::: {.pub-entry}
