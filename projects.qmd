@@ -7,6 +7,22 @@ toc: false
 
 ::: {.pub-entry}
 ::: {.pub-venue}
+Personal Project · 2026
+:::
+::: {.pub-title}
+AI Social Agent
+:::
+::: {.pub-meta}
+AI-assisted workflow for managing a professional X presence with human-in-the-loop approval. It monitors GitHub repositories for milestone-worthy updates, processes private notes and photos via a Telegram inbox, and generates ranked post drafts for review. The system learns from user feedback (approvals/rejections/edits) to refine its persona over time, while maintaining a strict privacy boundary through a separate private state repository.
+
+Tech: Python · OpenAI API · X API · Telegram Bot API · GitHub Actions
+
+[GitHub](https://github.com/PierpaoloV/social-agent){.btn-secondary-custom .btn-sm}
+:::
+:::
+
+::: {.pub-entry}
+::: {.pub-venue}
 Personal Project · 2024
 :::
 ::: {.pub-title}
