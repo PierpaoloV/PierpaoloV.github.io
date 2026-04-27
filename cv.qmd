@@ -1,7 +1,7 @@
 ---
 title: "Curriculum Vitae"
 title-meta: "CV | Pierpaolo Vendittelli"
-description: "Curriculum vitae of Pierpaolo Vendittelli, postdoctoral researcher in medical AI and computational pathology."
+description: "Get to know what I have done so far."
 toc: true
 toc-depth: 2
 ---
@@ -38,7 +38,7 @@ Dec 2024 – Present
 Mar 2021 – Jun 2026 (exp.)
 :::
 ::: {.cv-content}
-**PhD Candidate — AI for Digital Pathology** — *Radboud University Medical Center, Nijmegen, NL*
+**PhD Candidate — Artificial Intelligence** — *Radboud University Medical Center, Nijmegen, NL*
 
 - Developed deep-learning pipelines for pancreatic cancer WSI analysis within PANCAIM (EU Horizon 2020): multi-class U-Net for TSR quantification (368 patients / 4 datasets / 25 NL labs; Dice 0.75–0.86; TSR AUC 0.61 on TCGA-PAAD). Published in *PLOS ONE* (2024) and *SPIE MI* (2022).
 - Extended to multi-tissue segmentation for combining AI-based biomarkers (TSR, mitosis density, stromal cell density, TTR) in multivariate PDAC survival analysis. Published at *COMPAYL* (MICCAI 2025 workshop).
@@ -82,7 +82,7 @@ Feb 2020 – Sep 2020
 2021 – Jun 2026 (exp.)
 :::
 ::: {.cv-content}
-**PhD, AI for Digital Pathology** — *Radboud University Medical Center, Nijmegen, NL*
+**PhD, Artificial Intelligence** — *Radboud University Medical Center, Nijmegen, NL*
 :::
 :::
 
@@ -117,9 +117,19 @@ Grade: 94/110 · Erasmus+ Exchange, Fontys University of Applied Sciences, Eindh
 | Track | Technologies |
 |---|---|
 | Languages | Python · C++ · C · Bash · SQL |
-| ML / DL | PyTorch · scikit-learn · HuggingFace · Transformers · MONAI · Keras |
-| MLOps & Infra | Docker · Git · SLURM / GPU clusters · OpenSlide · W&B |
+| ML / DL | PyTorch · scikit-learn · OpenSlide · HuggingFace · Transformers · MONAI · Keras |
+| MLOps & Infra | Docker · Git · SLURM / GPU clusters  · W&B |
 | LLM & Agents | OpenAI API · Anthropic API · prompt engineering · multi-agent orchestration |
+:::
+
+---
+
+::: {.cv-section}
+## Selected Projects
+
+- **[Social Agent](https://github.com/PierpaoloV/social-agent)** (2026–present): Human-in-the-loop agent for personal technical communication. Captures private Telegram notes and GitHub milestones, ranks ideas, drafts LLM-assisted posts, routes approvals via Telegram, and schedules publishing with a separate private state store and tests.
+- **[AI Job-Search Agent](https://github.com/PierpaoloV/job-agent)** (2025–present): End-to-end pipeline for ingesting job-alert emails, parsing structured vacancies, deduplicating in SQLite, ranking with an LLM, and sending Telegram digests on a daily schedule.
+- **[Weekly AI Paper-Triage Agent](https://github.com/PierpaoloV/weekly_ai_paper)** (2024–present): Multi-agent workflow that scans arXiv and PubMed, summarizes candidate papers, scores relevance, and emails a weekly digest for literature triage.
 :::
 
 ---
