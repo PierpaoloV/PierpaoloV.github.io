@@ -1,0 +1,149 @@
+[
+  {
+    "id": "social-agent",
+    "category": "Personal Project",
+    "period": "2026",
+    "title": "AI Social Agent",
+    "areaIds": ["llm-agents-automation"],
+    "summary": [
+      "AI-assisted workflow for managing a professional X presence with human-in-the-loop approval. It monitors GitHub repositories for milestone-worthy updates, processes private notes and photos via a Telegram inbox, and generates ranked post drafts for review.",
+      "The system learns from user feedback to refine its persona over time, while maintaining a strict privacy boundary through a separate private state repository."
+    ],
+    "cvPeriod": "2026-present",
+    "cvSummary": "Human-in-the-loop agent for personal technical communication. Captures private Telegram notes and GitHub milestones, ranks ideas, drafts LLM-assisted posts, routes approvals via Telegram, and schedules publishing with a separate private state store and tests.",
+    "techSkillIds": ["python", "openai-api", "x-api", "telegram-bot-api", "github-actions"],
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/PierpaoloV/social-agent" }
+    ],
+    "featuredInCv": true
+  },
+  {
+    "id": "weekly-ai-paper-triage",
+    "category": "Personal Project",
+    "period": "2024",
+    "title": "Weekly AI Paper-Triage Agent",
+    "areaIds": ["llm-agents-automation"],
+    "summary": [
+      "Automated literature monitoring pipeline that fetches weekly arXiv and PubMed papers, performs LLM-based summarization via the OpenAI API, and scores each paper 0-10 against a personalized interest profile.",
+      "Results are compiled into an email digest, with deduplication and structured outputs handled in Python. Runs on GitHub Actions once per week with no manual intervention."
+    ],
+    "cvPeriod": "2024-present",
+    "cvSummary": "Multi-agent workflow that scans arXiv and PubMed, summarizes candidate papers, scores relevance, and emails a weekly digest for literature triage.",
+    "techSkillIds": ["python", "openai-api", "gmail-api", "sqlite", "github-actions"],
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/PierpaoloV/weekly_ai_paper" }
+    ],
+    "featuredInCv": true
+  },
+  {
+    "id": "job-search-agent",
+    "category": "Personal Project",
+    "period": "2026",
+    "title": "AI Job Search Agent",
+    "areaIds": ["llm-agents-automation"],
+    "summary": [
+      "Automated job-hunting pipeline that fetches LinkedIn, Indeed, and Glassdoor alert emails via the Gmail API, parses structured job listings, deduplicates against a SQLite store, and ranks each role against a personal resume and preferences profile.",
+      "Top matches are pushed as a ranked Telegram digest. Runs on GitHub Actions three times per day with no manual intervention."
+    ],
+    "cvPeriod": "2025-present",
+    "cvSummary": "End-to-end pipeline for ingesting job-alert emails, parsing structured vacancies, deduplicating in SQLite, ranking with an LLM, and sending Telegram digests on a daily schedule.",
+    "techSkillIds": ["python", "openai-api", "gmail-api", "sqlite", "github-actions", "telegram-bot-api", "haiku"],
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/PierpaoloV/job-agent" }
+    ],
+    "featuredInCv": true
+  },
+  {
+    "id": "phd-dissertation",
+    "category": "PhD Dissertation",
+    "organization": "Radboud University Medical Center",
+    "period": "2021 - 2024",
+    "title": "Learning from Histopathology Images: AI-Driven Biomarkers for Pancreatic Ductal Adenocarcinoma",
+    "areaIds": ["computational-pathology", "clinical-ai-systems"],
+    "summary": [
+      "PhD thesis focusing on the development of artificial intelligence methods for digital pathology in pancreatic ductal adenocarcinoma (PDAC). It addresses major challenges in prognostic assessment through automated tumor segmentation, biomarker quantification, and survival prediction from whole-slide histopathology images.",
+      "A central contribution is the development of robust pipelines for tumor-stroma ratio analysis and other interpretable morphological biomarkers associated with patient outcome. The work also evaluates multiple deep learning feature extraction strategies for their ability to predict overall survival across different datasets.",
+      "Overall, the thesis contributes scalable and interpretable AI-based tools that support prognostic modeling and future precision oncology research."
+    ],
+    "techSkillIds": ["python", "pytorch", "docker", "slurm"],
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/PierpaoloV/PhD-Dissertation" },
+      { "label": "Download PDF", "href": "https://github.com/PierpaoloV/PhD-Dissertation/raw/main/PhD_Dissertation.pdf" }
+    ]
+  },
+  {
+    "id": "pathology-segmentation-pipeline",
+    "category": "Open Source Framework",
+    "title": "Pathology Segmentation Pipeline",
+    "areaIds": ["computational-pathology", "clinical-ai-systems"],
+    "summary": [
+      "Docker-based pipeline for training and deploying deep learning segmentation models on whole-slide images. Built around an asynchronous tile inference engine, it supports tissue/background segmentation, multi-tissue classification, epithelium segmentation, and tumor-stroma ratio computation for pancreatic cancer WSIs."
+    ],
+    "techSkillIds": ["pytorch", "docker", "huggingface", "python"],
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/PierpaoloV/pathology-segmentation-pipeline" },
+      { "label": "DockerHub", "href": "https://hub.docker.com/r/pierpaolov93/pathology-pipeline" }
+    ]
+  },
+  {
+    "id": "wilms-anaplasia-classification",
+    "category": "Postdoc Research",
+    "organization": "Prinses Maxima Centre",
+    "period": "2025 - Present",
+    "title": "Wilms Tumor Anaplasia Classification",
+    "areaIds": ["computational-pathology", "clinical-ai-systems"],
+    "summary": [
+      "Weakly supervised deep learning pipeline for anaplasia classification in Wilms tumor WSIs, using foundation model features and multiple instance learning alongside slide-level encodings. Trained on a multi-center dataset with patient-wise cross-validation to prevent leakage, achieving AUC above 0.85 across configurations.",
+      "Integrates feature extraction, MIL aggregation, and robust evaluation for clinical outcome prediction, with planned external validation to assess generalizability."
+    ],
+    "techSkillIds": ["pytorch", "mil", "docker", "virchow", "prism"],
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/PierpaoloV/wilms-anaplasia-mil" }
+    ]
+  },
+  {
+    "id": "automatic-tsr-quantification",
+    "category": "PhD Research",
+    "organization": "Radboud University Medical Center",
+    "period": "2021 - 2024",
+    "title": "Automatic Quantification of Tumor-Stroma Ratio as a Prognostic Biomarker for Pancreatic Cancer",
+    "areaIds": ["computational-pathology", "clinical-ai-systems"],
+    "summary": [
+      "Automated WSI analysis pipeline for pancreatic cancer, combining deep learning-based segmentation of tumor epithelium, tumor bulk, and stroma with downstream biomarker extraction. Built a multi-step system leveraging IHC-guided supervision and U-Net models to enable fully automatic tumor-stroma ratio quantification across multi-center datasets.",
+      "Achieved robust external segmentation performance and demonstrated TSR as a reproducible prognostic feature for short-term survival."
+    ],
+    "techSkillIds": ["python", "pytorch", "monai", "docker", "slurm"],
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/DIAGNijmegen/automatic-tsr-quantification-for-pdac" }
+    ]
+  },
+  {
+    "id": "automatic-tumor-segmentation-pdac",
+    "category": "PhD Research",
+    "organization": "Radboud University Medical Center",
+    "period": "2021 - 2024",
+    "title": "Automatic Tumor Segmentation in PDAC WSIs",
+    "areaIds": ["computational-pathology"],
+    "summary": [
+      "Automatic tumor segmentation pipeline for pancreatic cancer WSIs, using multi-task convolutional neural networks to jointly model detection and segmentation. Evaluated across multiple resolutions with patch-based training, showing that lower-resolution contextual features improve performance.",
+      "The multi-task architecture reduced false positives and outperformed single-task baselines. Designed as a foundational module for downstream biomarker extraction and clinical AI pipelines."
+    ],
+    "techSkillIds": ["python", "pytorch", "docker", "slurm"],
+    "links": []
+  },
+  {
+    "id": "mri-synthesis-benchmarking",
+    "category": "Master's Thesis",
+    "organization": "University of Girona",
+    "period": "2020",
+    "title": "MRI Synthesis: ResU-Net vs. GAN Benchmarking",
+    "areaIds": ["clinical-ai-systems"],
+    "summary": [
+      "Benchmarked ResU-Net, cGAN, and CycleGAN for T1<->FLAIR MRI synthesis on WMH and BraTS 2018 datasets. ResU-Net achieved superior SSIM and lower MSE under data-scarce conditions."
+    ],
+    "techSkillIds": ["keras", "tensorflow", "python", "medical-image-registration"],
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/PierpaoloV/mri-brain-synthesis-from-scratch" }
+    ]
+  }
+]

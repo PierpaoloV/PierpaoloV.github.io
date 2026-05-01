@@ -1,0 +1,86 @@
+{
+  "skills": [
+    { "id": "anthropic-api", "label": "Anthropic API" },
+    { "id": "bash", "label": "Bash" },
+    { "id": "c", "label": "C" },
+    { "id": "cpp", "label": "C++" },
+    { "id": "docker", "label": "Docker" },
+    { "id": "email-digests", "label": "Email digests" },
+    { "id": "git", "label": "Git" },
+    { "id": "github-actions", "label": "GitHub Actions" },
+    { "id": "gmail-api", "label": "Gmail API" },
+    { "id": "haiku", "label": "Haiku 4.5" },
+    { "id": "huggingface", "label": "HuggingFace" },
+    { "id": "keras", "label": "Keras" },
+    { "id": "medical-image-registration", "label": "Medical image registration" },
+    { "id": "mil", "label": "MIL" },
+    { "id": "monai", "label": "MONAI" },
+    { "id": "multi-agent-orchestration", "label": "Multi-agent orchestration" },
+    { "id": "openai-api", "label": "OpenAI API" },
+    { "id": "openslide", "label": "OpenSlide" },
+    { "id": "prism", "label": "PRISM" },
+    { "id": "prompt-engineering", "label": "Prompt engineering" },
+    { "id": "python", "label": "Python" },
+    { "id": "pytorch", "label": "PyTorch" },
+    { "id": "scikit-learn", "label": "scikit-learn" },
+    { "id": "slurm", "label": "SLURM / GPU clusters" },
+    { "id": "sqlite", "label": "SQLite" },
+    { "id": "sql", "label": "SQL" },
+    { "id": "telegram-bot-api", "label": "Telegram Bot API" },
+    { "id": "tensorflow", "label": "TensorFlow" },
+    { "id": "transformers", "label": "Transformers" },
+    { "id": "virchow", "label": "Virchow" },
+    { "id": "wandb", "label": "W&B" },
+    { "id": "x-api", "label": "X API" }
+  ],
+  "groups": [
+    {
+      "id": "languages",
+      "label": "Languages",
+      "featured": false,
+      "skills": ["python", "cpp", "c", "bash", "sql"]
+    },
+    {
+      "id": "core-ml",
+      "label": "Core ML",
+      "featured": true,
+      "skills": ["pytorch", "scikit-learn", "monai"]
+    },
+    {
+      "id": "ml-dl",
+      "label": "ML / DL",
+      "featured": false,
+      "skills": ["pytorch", "scikit-learn", "openslide", "huggingface", "transformers", "monai", "keras"]
+    },
+    {
+      "id": "systems-infra",
+      "label": "Systems & Infra",
+      "featured": true,
+      "skills": ["docker", "slurm"]
+    },
+    {
+      "id": "mlops-infra",
+      "label": "MLOps & Infra",
+      "featured": false,
+      "skills": ["docker", "git", "slurm", "wandb"]
+    },
+    {
+      "id": "llm-apis",
+      "label": "LLM & APIs",
+      "featured": true,
+      "skills": ["openai-api", "anthropic-api"]
+    },
+    {
+      "id": "llm-agents",
+      "label": "LLM & Agents",
+      "featured": false,
+      "skills": ["openai-api", "anthropic-api", "prompt-engineering", "multi-agent-orchestration"]
+    },
+    {
+      "id": "programming",
+      "label": "Programming",
+      "featured": true,
+      "skills": ["python", "cpp", "sql"]
+    }
+  ]
+}

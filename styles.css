@@ -1,7 +1,7 @@
 /* ─── Learning page theme variables ───────────────────────────────────────── */
-/* CSS custom properties consumed by learning.qmd's inline styles.
+/* CSS custom properties consumed by the learning dashboard module.
    Both the light defaults (:root) and dark overrides live in one place so the
-   OJS-generated HTML adapts to theme without hardcoded hex values bleeding in. */
+   rendered HTML adapts to theme without hardcoded hex values bleeding in. */
 
 :root {
   --lp-panel-bg: #ffffff;
@@ -136,6 +136,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #374151;
 }
 
+.hero-open-to {
+  margin-top: 0.4rem;
+}
+
 /* ─── Profile photo ───────────────────────────────────────────────────────── */
 
 .profile-photo {
@@ -247,6 +251,77 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(5, 150, 105, 0.28);
   text-decoration: none;
+}
+
+/* ─── Shared page modules ─────────────────────────────────────────────────── */
+
+.site-shell {
+  width: 100%;
+}
+
+.section-stack {
+  display: grid;
+  gap: 2rem;
+}
+
+.page-section {
+  padding: 2.2rem 0 0;
+}
+
+.section-heading {
+  margin: 0 0 1.4rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #1e293b;
+}
+
+.loading-state,
+.error-state {
+  margin: 0;
+  padding: 1rem 0;
+  color: #64748b;
+  font-size: 0.98rem;
+}
+
+.resume-links,
+.record-actions {
+  display: flex;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.resume-links {
+  margin-bottom: 0.25rem;
+}
+
+.record-taxonomy {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0.8rem 0 0.35rem;
+}
+
+.topic-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid rgba(5, 150, 105, 0.18);
+  padding: 0.18rem 0.58rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.record-tech {
+  margin: 0.75rem 0 0;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #475569;
 }
 
 /* ─── Section cards ───────────────────────────────────────────────────────── */
@@ -465,6 +540,14 @@ h1, h2, h3, h4, h5, h6 {
 .pub-summary p { margin: 0 0 0.35rem; }
 .pub-summary p:last-child { margin-bottom: 0; }
 
+.pub-meta p {
+  margin: 0 0 0.7rem;
+}
+
+.pub-meta p:last-child {
+  margin-bottom: 0;
+}
+
 /* ─── CV page ─────────────────────────────────────────────────────────────── */
 /* Timeline layout: any .cv-section containing .cv-entry rows gets a vertical
    rail on the left with circular markers at each entry. Sections without
@@ -551,9 +634,304 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
+.cv-content p {
+  margin: 0.35rem 0 0;
+}
+
+.cv-content ul {
+  margin: 0.6rem 0 0;
+  padding-left: 1.15rem;
+}
+
 .cv-content em {
   color: #475569;
   font-size: 0.93rem;
+}
+
+.cv-focus-areas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0.7rem 0 0.2rem;
+}
+
+.cv-skills-table {
+  margin-bottom: 0;
+}
+
+.cv-project-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.95rem;
+}
+
+.cv-project-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #f8fafc;
+  padding: 1rem 1.1rem;
+}
+
+.cv-project-item strong {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.cv-project-item p,
+.cv-note {
+  margin: 0;
+  color: #475569;
+  line-height: 1.65;
+}
+
+/* ─── Learning dashboard ─────────────────────────────────────────────────── */
+
+.learning-shell {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.learning-panel {
+  background: var(--lp-panel-bg);
+  border: 1px solid var(--lp-border);
+  border-radius: 14px;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--lp-shadow);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.learning-panel-title {
+  margin: 0 0 1.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--lp-text-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.learning-progress-row {
+  margin-bottom: 1.1rem;
+}
+
+.learning-progress-row:last-child {
+  margin-bottom: 0;
+}
+
+.learning-progress-copy {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 5px;
+}
+
+.learning-progress-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--lp-text);
+}
+
+.learning-progress-meta {
+  color: var(--lp-text-muted);
+  font-size: 0.85rem;
+}
+
+.learning-progress-track {
+  background: var(--lp-progress-bg);
+  border-radius: 999px;
+  height: 13px;
+  overflow: hidden;
+}
+
+.learning-progress-fill {
+  background: linear-gradient(90deg, var(--lp-accent), var(--lp-accent-soft));
+  height: 100%;
+  border-radius: 999px;
+  min-width: 0;
+  transition: width 0.6s ease;
+}
+
+.learning-year summary,
+.learning-month summary,
+.learning-week-summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.learning-year > summary {
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 0.4rem 0;
+}
+
+.learning-year-body {
+  padding-left: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.learning-month > summary {
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 0.35rem 0;
+  color: var(--lp-text-soft);
+}
+
+.learning-month-body {
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.learning-week {
+  margin-bottom: 1rem;
+  border: 1px solid var(--lp-border);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--lp-panel-bg);
+}
+
+.learning-week-summary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--lp-panel-soft);
+  color: var(--lp-text);
+  font-size: 0.97rem;
+  font-weight: 600;
+}
+
+.learning-week-meta {
+  margin-left: auto;
+  color: var(--lp-text-muted);
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.learning-week-body {
+  padding: 1rem 1.25rem;
+}
+
+.learning-section-label {
+  margin: 0 0 0.45rem;
+  color: var(--lp-text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.learning-section-label + .learning-table-wrap,
+.learning-section-label + .learning-copy {
+  margin-bottom: 1.1rem;
+}
+
+.learning-copy {
+  margin: 0;
+  color: var(--lp-text-soft);
+  font-size: 0.86rem;
+  line-height: 1.6;
+}
+
+.learning-table-wrap {
+  overflow-x: auto;
+}
+
+.learning-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.86rem;
+  color: var(--lp-text-soft);
+}
+
+.learning-table thead tr {
+  border-bottom: 2px solid var(--lp-border);
+  color: var(--lp-text-muted);
+  font-size: 0.8rem;
+}
+
+.learning-table th,
+.learning-table td {
+  padding: 8px;
+  vertical-align: top;
+}
+
+.learning-table th {
+  font-weight: 600;
+  text-align: left;
+}
+
+.learning-table tbody tr {
+  border-bottom: 1px solid var(--lp-border-soft);
+}
+
+.learning-table a {
+  color: var(--lp-accent);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.learning-status-cell {
+  text-align: center;
+}
+
+.learning-status-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1rem;
+  font-size: 1rem;
+}
+
+.learning-status-icon--done {
+  color: #22c55e;
+}
+
+.learning-status-icon--pending {
+  color: var(--lp-status-empty);
+}
+
+.learning-difficulty {
+  display: inline-block;
+  border-radius: 999px;
+  color: white;
+  padding: 1px 8px;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.learning-difficulty--easy {
+  background: #22c55e;
+}
+
+.learning-difficulty--medium {
+  background: #f59e0b;
+}
+
+.learning-difficulty--hard {
+  background: #ef4444;
+}
+
+.learning-takeaway {
+  margin-top: 4px;
+  color: var(--lp-text-muted);
+  font-size: 0.78rem;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.learning-grade {
+  display: inline-block;
+  margin-left: 4px;
+  vertical-align: middle;
+  border-radius: 6px;
+  background: var(--lp-accent);
+  color: white;
+  padding: 1px 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
 }
 
 /* ═══════════════════════════════════════════════════════════════════════════
@@ -620,6 +998,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 [data-bs-theme="dark"] .hero p {
+  color: #cbd5e1;
+}
+
+[data-bs-theme="dark"] .section-heading,
+[data-bs-theme="dark"] .loading-state,
+[data-bs-theme="dark"] .error-state {
   color: #cbd5e1;
 }
 
@@ -706,6 +1090,12 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid rgba(52, 211, 153, 0.2);
 }
 
+[data-bs-theme="dark"] .topic-badge {
+  background: rgba(52, 211, 153, 0.12);
+  color: #6ee7b7;
+  border-color: rgba(52, 211, 153, 0.28);
+}
+
 [data-bs-theme="dark"] .pub-entry {
   border-bottom-color: #1e293b;
 }
@@ -720,6 +1110,12 @@ h1, h2, h3, h4, h5, h6 {
 
 [data-bs-theme="dark"] .pub-meta {
   color: #94a3b8;
+}
+
+[data-bs-theme="dark"] .record-tech,
+[data-bs-theme="dark"] .cv-note,
+[data-bs-theme="dark"] .cv-project-item p {
+  color: #cbd5e1;
 }
 
 [data-bs-theme="dark"] .pub-authors { color: #94a3b8; }
@@ -755,6 +1151,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #94a3b8;
 }
 
+[data-bs-theme="dark"] .cv-project-item {
+  background: rgba(30, 41, 59, 0.55);
+  border-color: rgba(52, 211, 153, 0.14);
+}
+
 [data-bs-theme="dark"] .skill-group-label {
   color: #94a3b8;
 }
@@ -785,6 +1186,12 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(167, 139, 250, 0.14);
   color: #c4b5fd;
   border-color: rgba(167, 139, 250, 0.35);
+}
+
+[data-bs-theme="dark"] .learning-year > summary,
+[data-bs-theme="dark"] .learning-month > summary,
+[data-bs-theme="dark"] .learning-week-summary {
+  color: var(--lp-text);
 }
 
 /* ═══════════════════════════════════════════════════════════════════════════
@@ -878,6 +1285,16 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
   }
 
+  .learning-progress-copy,
+  .learning-week-summary {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .learning-week-meta {
+    margin-left: 0;
+  }
+
   .skill-badge { font-size: 0.78rem; padding: 0.15rem 0.5rem; }
 
   .skill-group {
@@ -903,4 +1320,7 @@ h1, h2, h3, h4, h5, h6 {
   .pub-venue { font-size: 0.78rem; }
   .pub-meta { font-size: 0.85rem; }
   .navbar-brand { font-size: 0.95rem; }
+  .learning-panel {
+    padding: 1.1rem 1rem;
+  }
 }

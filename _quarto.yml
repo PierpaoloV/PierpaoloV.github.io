@@ -9,6 +9,7 @@ project:
     - learning.qmd
   resources:
     - robots.txt
+    - assets/
 
 website:
   title: "Pierpaolo Vendittelli"
@@ -53,33 +54,7 @@ format:
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
           <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-          <script>
-          (function () {
-            var root = document.documentElement;
-            var syncThemeAttribute = function () {
-              var body = document.body;
-              if (body) {
-                root.setAttribute('data-bs-theme', body.classList.contains('quarto-dark') ? 'dark' : 'light');
-                return;
-              }
-              var stored = localStorage.getItem('quarto-color-scheme');
-              if (!stored) {
-                localStorage.setItem('quarto-color-scheme', 'alternate');
-                stored = 'alternate';
-              }
-              root.setAttribute('data-bs-theme', stored === 'alternate' ? 'dark' : 'light');
-            };
-
-            syncThemeAttribute();
-
-            document.addEventListener('DOMContentLoaded', function () {
-              syncThemeAttribute();
-              if (!document.body) return;
-              var observer = new MutationObserver(syncThemeAttribute);
-              observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
-            });
-          })();
-          </script>
+          <script src="assets/js/theme.js"></script>
     toc: false
     smooth-scroll: true
     link-external-icon: false
