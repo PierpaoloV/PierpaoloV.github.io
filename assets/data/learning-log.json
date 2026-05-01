@@ -1,0 +1,59 @@
+{
+  "owner": "PierpaoloV",
+  "repo": "learning",
+  "year": 2026,
+  "monthLabel": "April - May 2026",
+  "weekStarts": ["2026-04-18", "2026-04-25", "2026-05-02", "2026-05-09"],
+  "weeks": [
+    {
+      "label": "Week 1 · Apr 18-24",
+      "problems": [
+        { "slug": "0001-two-sum", "title": "Two Sum", "difficulty": "Easy" }
+      ],
+      "systemDesign": null,
+      "cards": {
+        "count": 10,
+        "topics": "attention, backprop, batch norm, transformer, bias-variance, loss functions, RAG, MIL, optimizers, RLHF"
+      }
+    },
+    {
+      "label": "Week 2 · Apr 25 - May 1",
+      "problems": [
+        { "slug": "0217-contains-duplicate", "title": "Contains Duplicate", "difficulty": "Easy" },
+        { "slug": "0049-group-anagrams", "title": "Group Anagrams", "difficulty": "Medium" },
+        { "slug": "0238-product-of-array-except-self", "title": "Product Except Self", "difficulty": "Medium" }
+      ],
+      "systemDesign": { "slug": "url-shortener", "title": "URL Shortener" },
+      "cards": {
+        "count": 5,
+        "topics": "dropout, CNN, precision/recall, KV cache, transfer learning & LoRA"
+      }
+    },
+    {
+      "label": "Week 3 · May 2-8",
+      "problems": [
+        { "slug": "0125-valid-palindrome", "title": "Valid Palindrome", "difficulty": "Easy" },
+        { "slug": "0015-3sum", "title": "3Sum", "difficulty": "Medium" },
+        { "slug": "0020-valid-parentheses", "title": "Valid Parentheses", "difficulty": "Easy" }
+      ],
+      "systemDesign": { "slug": "key-value-store", "title": "Key-Value Store" },
+      "cards": {
+        "count": 3,
+        "topics": "vanishing gradient, data augmentation, ML system design"
+      }
+    },
+    {
+      "label": "Week 4 · May 9-15",
+      "problems": [
+        { "slug": "0121-best-time-to-buy-sell-stock", "title": "Best Time to Buy Stock", "difficulty": "Easy" },
+        { "slug": "0003-longest-substring-without-repeating", "title": "Longest Substring No Repeat", "difficulty": "Medium" },
+        { "slug": "0206-reverse-linked-list", "title": "Reverse Linked List", "difficulty": "Easy" }
+      ],
+      "systemDesign": { "slug": "rate-limiter", "title": "Rate Limiter" },
+      "cards": {
+        "count": 2,
+        "topics": "contrastive learning, LLM agents"
+      }
+    }
+  ]
+}

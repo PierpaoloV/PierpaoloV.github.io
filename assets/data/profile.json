@@ -1,0 +1,80 @@
+{
+  "name": "Pierpaolo Vendittelli",
+  "title": "Postdoc Researcher - Medical AI & Computational Pathology",
+  "location": "Nijmegen, The Netherlands · Open to Italy · Remote EU · US-remote",
+  "summary": [
+    "I am Pierpaolo Vendittelli, a postdoctoral researcher developing deep-learning systems for digital pathology, spanning whole-slide image segmentation, multi-center clinical AI pipelines, prognostic modeling, and downstream applications of foundation models.",
+    "My current work focuses on Wilms tumor grading at the Prinses Maxima Center for Pediatric Oncology. During my PhD at Radboud University Medical Center, I worked on pancreatic cancer prognosis, tumor segmentation, and tumor microenvironment quantification.",
+    "I also design LLM-based automation tools to streamline research workflows and professional social media management. This portfolio brings together my publications, projects, CV, and ongoing learning log."
+  ],
+  "openTo": "Open to Applied Scientist, ML Engineer, and R&D roles across medical AI and applied ML.",
+  "milestone": "PhD defense: June 1, 2026.",
+  "photo": "assets/definitive_profile_picture_circle.png",
+  "primaryLink": {
+    "label": "View CV",
+    "href": "cv.html",
+    "variant": "primary"
+  },
+  "links": [
+    {
+      "label": "GitHub",
+      "href": "https://github.com/PierpaoloV",
+      "icon": "github"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/pierpaolo-vendittelli",
+      "icon": "linkedin"
+    },
+    {
+      "label": "Google Scholar",
+      "href": "https://scholar.google.com/citations?user=C0h0smwAAAAJ&hl=en&oi=ao",
+      "icon": "scholar"
+    },
+    {
+      "label": "ORCID",
+      "href": "https://orcid.org/0000-0001-6712-3708",
+      "icon": "orcid"
+    },
+    {
+      "label": "Email",
+      "href": "mailto:pierpaolo.vendittelli93@gmail.com",
+      "icon": "email"
+    }
+  ],
+  "schema": {
+    "url": "https://pierpaolov.github.io/",
+    "image": "https://pierpaolov.github.io/assets/definitive_profile_picture_circle.png",
+    "jobTitle": "Postdoctoral Researcher in Medical AI and Computational Pathology",
+    "description": "Postdoctoral researcher developing deep-learning systems for digital pathology, clinical AI pipelines, and LLM-based automation for research workflows.",
+    "worksFor": {
+      "name": "Prinses Maxima Center for Pediatric Oncology"
+    },
+    "alumniOf": [
+      {
+        "name": "Radboud University Medical Center"
+      },
+      {
+        "name": "University of Girona"
+      },
+      {
+        "name": "University of Cassino and Southern Lazio"
+      }
+    ],
+    "sameAs": [
+      "https://github.com/PierpaoloV",
+      "https://www.linkedin.com/in/pierpaolo-vendittelli",
+      "https://scholar.google.com/citations?user=C0h0smwAAAAJ&hl=en&oi=ao",
+      "https://orcid.org/0000-0001-6712-3708"
+    ],
+    "knowsAbout": [
+      "Computational pathology",
+      "Medical AI",
+      "Digital pathology",
+      "Whole-slide image analysis",
+      "Machine learning",
+      "Deep learning",
+      "LLM agents"
+    ]
+  }
+}

@@ -92,33 +92,7 @@ gtag('config', 'G-7EYEDKW974', { 'anonymize_ip': true});
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Roboto+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
-<script>
-(function () {
-  var root = document.documentElement;
-  var syncThemeAttribute = function () {
-    var body = document.body;
-    if (body) {
-      root.setAttribute('data-bs-theme', body.classList.contains('quarto-dark') ? 'dark' : 'light');
-      return;
-    }
-    var stored = localStorage.getItem('quarto-color-scheme');
-    if (!stored) {
-      localStorage.setItem('quarto-color-scheme', 'alternate');
-      stored = 'alternate';
-    }
-    root.setAttribute('data-bs-theme', stored === 'alternate' ? 'dark' : 'light');
-  };
-
-  syncThemeAttribute();
-
-  document.addEventListener('DOMContentLoaded', function () {
-    syncThemeAttribute();
-    if (!document.body) return;
-    var observer = new MutationObserver(syncThemeAttribute);
-    observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
-  });
-})();
-</script>
+<script src="assets/js/theme.js"></script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -342,18 +316,8 @@ gtag('config', 'G-7EYEDKW974', { 'anonymize_ip': true});
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul class="collapse">
-  <li><a href="#experience" id="toc-experience" class="nav-link active" data-scroll-target="#experience">Experience</a></li>
-  <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
-  <li><a href="#skills" id="toc-skills" class="nav-link" data-scroll-target="#skills">Skills</a></li>
-  <li><a href="#selected-projects" id="toc-selected-projects" class="nav-link" data-scroll-target="#selected-projects">Selected Projects</a></li>
-  <li><a href="#publications" id="toc-publications" class="nav-link" data-scroll-target="#publications">Publications</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -383,143 +347,10 @@ gtag('config', 'G-7EYEDKW974', { 'anonymize_ip': true});
 </header>
 
 
-<div style="margin-bottom:1.5rem;">
-<p><a class="btn-primary-custom" href="https://github.com/PierpaoloV/cv/releases/latest/download/resume-applied.pdf" target="_blank">⬇ Applied Resume (PDF)</a> &nbsp; <a class="btn-secondary-custom" href="https://github.com/PierpaoloV/cv/releases/latest/download/resume-research.pdf" target="_blank">⬇ Research Resume (PDF)</a> &nbsp; <a class="btn-secondary-custom" href="https://github.com/PierpaoloV/cv/releases/latest/download/cv.pdf" target="_blank">⬇ Full Academic CV (PDF)</a></p>
+<div id="cv-root">
+
 </div>
-<hr>
-<section id="experience" class="level2 cv-section">
-<h2 class="anchored" data-anchor-id="experience">Experience</h2>
-<div class="cv-entry">
-<div class="cv-date">
-<p>Dec 2024 – Present</p>
-</div>
-<div class="cv-content">
-<p><strong>Postdoc Researcher</strong> — <em>Prinses Maxima Centre for Pediatric Oncology, Utrecht, NL</em></p>
-<ul>
-<li>Developing deep-learning and MIL pipelines for WSI analysis of Wilms tumor, targeting anaplasia grading and clinical outcome prediction.</li>
-<li>Coordinating multi-center dataset integration across collaborating hospitals.</li>
-<li>Translating model outputs into interpretable biomarkers in collaboration with pathologists and pediatric oncologists.</li>
-<li>Supervising students; contributing to peer-reviewed publications.</li>
-</ul>
-</div>
-</div>
-<div class="cv-entry">
-<div class="cv-date">
-<p>Mar 2021 – Jun 2026 (exp.)</p>
-</div>
-<div class="cv-content">
-<p><strong>PhD Candidate — Artificial Intelligence</strong> — <em>Radboud University Medical Center, Nijmegen, NL</em></p>
-<ul>
-<li>Developed deep-learning pipelines for pancreatic cancer WSI analysis within PANCAIM (EU Horizon 2020): multi-class U-Net for TSR quantification (368 patients / 4 datasets / 25 NL labs; Dice 0.75–0.86; TSR AUC 0.61 on TCGA-PAAD). Published in <em>PLOS ONE</em> (2024) and <em>SPIE MI</em> (2022).</li>
-<li>Extended to multi-tissue segmentation for combining AI-based biomarkers (TSR, mitosis density, stromal cell density, TTR) in multivariate PDAC survival analysis. Published at <em>COMPAYL</em> (MICCAI 2025 workshop).</li>
-<li>Co-authored multi-center clinical studies: <em>European Radiology</em> (2025) on multimodal prognostication; <em>The Lancet Oncology</em> (2025) PANORAMA study; <em>Medical Image Analysis</em> (2025) scoping review on multimodal AI.</li>
-<li>Teaching Assistant for Image Analysis and Medical Imaging Analysis (4 course editions, Radboud University); co-supervised Master’s theses.</li>
-</ul>
-</div>
-</div>
-<div class="cv-entry">
-<div class="cv-date">
-<p>Oct 2020 – Feb 2021</p>
-</div>
-<div class="cv-content">
-<p><strong>Machine Learning Engineer</strong> — <em>Everis Italy (NTT DATA), Rome, IT</em></p>
-<ul>
-<li>Built AI chatbots and conversational systems for clients in banking and automotive.</li>
-<li>Annotated industrial data for object recognition systems and developed live translation pipelines for video content.</li>
-</ul>
-</div>
-</div>
-<div class="cv-entry">
-<div class="cv-date">
-<p>Feb 2020 – Sep 2020</p>
-</div>
-<div class="cv-content">
-<p><strong>Research Intern</strong> — <em>ViCOROB – NeuroImage Computing Group, University of Girona, ES</em></p>
-<ul>
-<li>Benchmarked MRI synthesis architectures (ResU-Net, cGAN, CycleGAN) on WMH and BraTS 2018 datasets.</li>
-<li>ResU-Net showed superior SSIM and lower MSE vs.&nbsp;GAN variants under data-scarce conditions; informed Master’s thesis (grade 8.6/10).</li>
-</ul>
-</div>
-</div>
-</section>
-<hr>
-<section id="education" class="level2 cv-section">
-<h2 class="anchored" data-anchor-id="education">Education</h2>
-<div class="cv-entry">
-<div class="cv-date">
-<p>2021 – Jun 2026 (exp.)</p>
-</div>
-<div class="cv-content">
-<p><strong>PhD, Artificial Intelligence</strong> — <em>Radboud University Medical Center, Nijmegen, NL</em></p>
-</div>
-</div>
-<div class="cv-entry">
-<div class="cv-date">
-<p>2018 – 2020</p>
-</div>
-<div class="cv-content">
-<p><strong>Joint MSc, Medical Imaging and Applications (MAIA)</strong> — <em>University of Burgundy (FR) · University of Cassino (IT) · University of Girona (ES)</em></p>
-<p>Erasmus Mundus Consortium Grant · Grades: Bien (FR), 102/110 (IT), 8.6/10 (ES)</p>
-</div>
-</div>
-<div class="cv-entry">
-<div class="cv-date">
-<p>2012 – 2017</p>
-</div>
-<div class="cv-content">
-<p><strong>BSc, Informatics and Telecommunication Engineering</strong> — <em>University of Cassino and Southern Lazio, IT</em></p>
-<p>Grade: 94/110 · Erasmus+ Exchange, Fontys University of Applied Sciences, Eindhoven (2016)</p>
-</div>
-</div>
-</section>
-<hr>
-<section id="skills" class="level2 cv-section">
-<h2 class="anchored" data-anchor-id="skills">Skills</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Track</th>
-<th>Technologies</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Languages</td>
-<td>Python · C++ · C · Bash · SQL</td>
-</tr>
-<tr class="even">
-<td>ML / DL</td>
-<td>PyTorch · scikit-learn · OpenSlide · HuggingFace · Transformers · MONAI · Keras</td>
-</tr>
-<tr class="odd">
-<td>MLOps &amp; Infra</td>
-<td>Docker · Git · SLURM / GPU clusters · W&amp;B</td>
-</tr>
-<tr class="even">
-<td>LLM &amp; Agents</td>
-<td>OpenAI API · Anthropic API · prompt engineering · multi-agent orchestration</td>
-</tr>
-</tbody>
-</table>
-</section>
-<hr>
-<section id="selected-projects" class="level2 cv-section">
-<h2 class="anchored" data-anchor-id="selected-projects">Selected Projects</h2>
-<ul>
-<li><strong><a href="https://github.com/PierpaoloV/social-agent">Social Agent</a></strong> (2026–present): Human-in-the-loop agent for personal technical communication. Captures private Telegram notes and GitHub milestones, ranks ideas, drafts LLM-assisted posts, routes approvals via Telegram, and schedules publishing with a separate private state store and tests.</li>
-<li><strong><a href="https://github.com/PierpaoloV/job-agent">AI Job-Search Agent</a></strong> (2025–present): End-to-end pipeline for ingesting job-alert emails, parsing structured vacancies, deduplicating in SQLite, ranking with an LLM, and sending Telegram digests on a daily schedule.</li>
-<li><strong><a href="https://github.com/PierpaoloV/weekly_ai_paper">Weekly AI Paper-Triage Agent</a></strong> (2024–present): Multi-agent workflow that scans arXiv and PubMed, summarizes candidate papers, scores relevance, and emails a weekly digest for literature triage.</li>
-</ul>
-</section>
-<hr>
-<section id="publications" class="level2 cv-section">
-<h2 class="anchored" data-anchor-id="publications">Publications</h2>
-<p>See the <a href="./publications.html">Publications page</a> for full references with DOI links.</p>
-</section>
+<script type="module" src="assets/js/pages/cv.js"></script>
 
 
 

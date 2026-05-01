@@ -1,0 +1,20 @@
+[
+  {
+    "id": "computational-pathology",
+    "title": "Computational Pathology",
+    "summary": "Whole-slide image analysis, multi-instance learning, segmentation, and survival prediction in oncology.",
+    "icon": "computational-pathology"
+  },
+  {
+    "id": "clinical-ai-systems",
+    "title": "Clinical AI Systems",
+    "summary": "End-to-end pipelines for clinical deployment - reproducible, multi-center, interpretable.",
+    "icon": "clinical-ai-systems"
+  },
+  {
+    "id": "llm-agents-automation",
+    "title": "LLM Agents & Automation",
+    "summary": "Production LLM pipelines for research workflows (paper triage, summarization, scoring) and professional presence management.",
+    "icon": "llm-agents-automation"
+  }
+]

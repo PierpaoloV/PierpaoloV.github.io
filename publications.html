@@ -92,33 +92,7 @@ gtag('config', 'G-7EYEDKW974', { 'anonymize_ip': true});
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Roboto+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
-<script>
-(function () {
-  var root = document.documentElement;
-  var syncThemeAttribute = function () {
-    var body = document.body;
-    if (body) {
-      root.setAttribute('data-bs-theme', body.classList.contains('quarto-dark') ? 'dark' : 'light');
-      return;
-    }
-    var stored = localStorage.getItem('quarto-color-scheme');
-    if (!stored) {
-      localStorage.setItem('quarto-color-scheme', 'alternate');
-      stored = 'alternate';
-    }
-    root.setAttribute('data-bs-theme', stored === 'alternate' ? 'dark' : 'light');
-  };
-
-  syncThemeAttribute();
-
-  document.addEventListener('DOMContentLoaded', function () {
-    syncThemeAttribute();
-    if (!document.body) return;
-    var observer = new MutationObserver(syncThemeAttribute);
-    observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
-  });
-})();
-</script>
+<script src="assets/js/theme.js"></script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -371,123 +345,12 @@ gtag('config', 'G-7EYEDKW974', { 'anonymize_ip': true});
 </header>
 
 
-<div class="pub-entry">
-<div class="pub-venue">
-<p><span class="pub-type pub-type-journal">Journal</span> PLOS ONE · May 2024</p>
-</div>
-<div class="pub-title">
-<p><a href="https://doi.org/10.1371/journal.pone.0301969">Automatic quantification of tumor-stroma ratio as a prognostic biomarker for pancreatic cancer</a></p>
-</div>
-<div class="pub-authors">
-<p><strong>Vendittelli P</strong>, Bokhorst J-M, Smeets EMM, Kryklyva V, Brosens LAA, Verbeke C, Litjens G.</p>
-</div>
-<div class="pub-summary">
-<p>Multi-class U-Net for TSR segmentation across 368 patients / 4 datasets (25 NL labs). Dice 0.75 (epithelium) and 0.86 (tumor bulk) on external TCGA-PAAD validation. TSR AUC 0.61 for 6-month survival prediction on an independent cohort.</p>
-</div>
-</div>
-<div class="pub-entry">
-<div class="pub-venue">
-<p><span class="pub-type pub-type-conference">Conference</span> MIDL 2023 · Sep 2023 · Poster</p>
-</div>
-<div class="pub-title">
-<p><a href="https://openreview.net/pdf?id=Dtz_iaUpGc">Automatic quantification of TSR as a prognostic marker for pancreatic cancer</a></p>
-</div>
-<div class="pub-authors">
-<p><strong>Vendittelli P</strong>, Bokhorst J-M, Smeets EMM, Kryklyva V, Brosens LAA, Verbeke C, Litjens G.</p>
-</div>
-<div class="pub-summary">
-<p>Segmentation of tumor epithelium, healthy epithelium, and TSR estimation from pancreatic whole-slide images.</p>
-</div>
-</div>
-<div class="pub-entry">
-<div class="pub-venue">
-<p><span class="pub-type pub-type-journal">Journal</span> <span class="pub-type pub-type-review">Review</span> Cancers (MDPI) · Jul 2022</p>
-</div>
-<div class="pub-title">
-<p><a href="https://doi.org/10.3390/cancers14143498">Setting the research agenda for clinical AI in pancreatic adenocarcinoma imaging</a></p>
-</div>
-<div class="pub-authors">
-<p>Schuurmans M, Alves N, <strong>Vendittelli P</strong>, Huisman H, Hermans J.</p>
-</div>
-<div class="pub-summary">
-<p>Systematic review of the current role of AI for pancreatic cancer diagnosis and personalised treatment planning.</p>
-</div>
-</div>
-<div class="pub-entry">
-<div class="pub-venue">
-<p><span class="pub-type pub-type-conference">Conference</span> SPIE Medical Imaging · Apr 2022 · Poster</p>
-</div>
-<div class="pub-title">
-<p><a href="https://doi.org/10.1117/12.2611542">Automatic tumour segmentation in H&amp;E-stained whole-slide images of the pancreas</a></p>
-</div>
-<div class="pub-authors">
-<p><strong>Vendittelli P</strong>, Smeets EMM, Litjens G.</p>
-</div>
-<div class="pub-summary">
-<p>Multi-task U-Net with auxiliary classification head for coarse pancreatic tumour area segmentation; classification head reduced false positives.</p>
-</div>
-<div class="pub-links">
-<p><a href="assets/papers/spie_2022.pdf" class="btn-secondary-custom btn-sm" target="_blank">PDF</a></p>
-</div>
-<div class="pub-entry">
-<div class="pub-venue">
-<p><span class="pub-type pub-type-journal">Journal</span> European Radiology · 2025</p>
-</div>
-<div class="pub-title">
-<p>End-to-end prognostication in pancreatic cancer by multimodal deep learning: a retrospective, multicenter study</p>
-</div>
-<div class="pub-authors">
-<p>Schuurmans M, Saha A, Alves N, <strong>Vendittelli P</strong>, Yakar D, Sabroso-Lasa S, Xue N, Malats N, Huisman H, Hermans J, Litjens G.</p>
-</div>
-<div class="pub-summary">
-<p>Multimodal deep learning combining CT imaging and clinical data for PDAC outcome prediction across multiple centers.</p>
-</div>
-</div>
-<div class="pub-entry">
-<div class="pub-venue">
-<p><span class="pub-type pub-type-journal">Journal</span> The Lancet Oncology · 2026</p>
-</div>
-<div class="pub-title">
-<p>Artificial intelligence and radiologists in pancreatic cancer detection using standard of care CT scans (PANORAMA): an international, paired, non-inferiority, confirmatory, observational study</p>
-</div>
-<div class="pub-authors">
-<p>Alves N, Schuurmans M, Rutkowski D, Saha A, <strong>Vendittelli P</strong>, et al.&nbsp;(PANORAMA consortium).</p>
-</div>
-<div class="pub-summary">
-<p>International paired non-inferiority study comparing AI and radiologists for pancreatic cancer detection on standard-of-care CT.</p>
-</div>
-</div>
-<div class="pub-entry">
-<div class="pub-venue">
-<p><span class="pub-type pub-type-journal">Journal</span> <span class="pub-type pub-type-review">Review</span> Medical Image Analysis · 2025</p>
-</div>
-<div class="pub-title">
-<p>Navigating the landscape of multimodal AI in medicine: a scoping review on technical challenges and clinical applications</p>
-</div>
-<div class="pub-authors">
-<p>Schouten D, Nicoletti G, Dille B, Chia C, <strong>Vendittelli P</strong>, Schuurmans M, Litjens G, Khalili N.</p>
-</div>
-<div class="pub-summary">
-<p>Scoping review on technical challenges and clinical applications of multimodal AI in medicine.</p>
-</div>
-</div>
-<div class="pub-entry">
-<div class="pub-venue">
-<p><span class="pub-type pub-type-workshop">Workshop</span> COMPAYL Workshop, MICCAI 2025 · Sep 2025 · Poster</p>
-</div>
-<div class="pub-title">
-<p>Combining AI-based Biomarkers for PDAC Survival</p>
-</div>
-<div class="pub-authors">
-<p>Hensens L, Sabroso-Lasa S, Verbeke C, Malats N, Litjens G, <strong>Vendittelli P</strong>.</p>
-</div>
-<div class="pub-summary">
-<p>Multi-tissue segmentation pipeline integrating TSR, mitosis density, stromal cell density and tumor-to-tissue ratio for multivariate survival prediction in pancreatic cancer.</p>
-</div>
-</div>
-
+<div id="publications-root">
 
 </div>
+<script type="module" src="assets/js/pages/publications.js"></script>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

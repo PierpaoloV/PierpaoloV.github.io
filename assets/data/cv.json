@@ -1,0 +1,97 @@
+{
+  "resumeLinks": [
+    {
+      "label": "Applied Resume (PDF)",
+      "href": "https://github.com/PierpaoloV/cv/releases/latest/download/resume-applied.pdf",
+      "variant": "primary"
+    },
+    {
+      "label": "Research Resume (PDF)",
+      "href": "https://github.com/PierpaoloV/cv/releases/latest/download/resume-research.pdf",
+      "variant": "secondary"
+    },
+    {
+      "label": "Full Academic CV (PDF)",
+      "href": "https://github.com/PierpaoloV/cv/releases/latest/download/cv.pdf",
+      "variant": "secondary"
+    }
+  ],
+  "experience": [
+    {
+      "date": "Dec 2024 - Present",
+      "role": "Postdoc Researcher",
+      "organization": "Prinses Maxima Centre for Pediatric Oncology",
+      "location": "Utrecht, NL",
+      "focusAreaIds": ["computational-pathology", "clinical-ai-systems"],
+      "bullets": [
+        "Developing deep-learning and MIL pipelines for WSI analysis of Wilms tumor, targeting anaplasia grading and clinical outcome prediction.",
+        "Coordinating multi-center dataset integration across collaborating hospitals.",
+        "Translating model outputs into interpretable biomarkers in collaboration with pathologists and pediatric oncologists.",
+        "Supervising students; contributing to peer-reviewed publications."
+      ]
+    },
+    {
+      "date": "Mar 2021 - Jun 2026 (exp.)",
+      "role": "PhD Candidate - Artificial Intelligence",
+      "organization": "Radboud University Medical Center",
+      "location": "Nijmegen, NL",
+      "focusAreaIds": ["computational-pathology", "clinical-ai-systems"],
+      "bullets": [
+        "Developed deep-learning pipelines for pancreatic cancer WSI analysis within PANCAIM (EU Horizon 2020): multi-class U-Net for TSR quantification (368 patients / 4 datasets / 25 NL labs; Dice 0.75-0.86; TSR AUC 0.61 on TCGA-PAAD). Published in PLOS ONE (2024) and SPIE MI (2022).",
+        "Extended to multi-tissue segmentation for combining AI-based biomarkers (TSR, mitosis density, stromal cell density, TTR) in multivariate PDAC survival analysis. Published at COMPAYL (MICCAI 2025 workshop).",
+        "Co-authored multi-center clinical studies: European Radiology (2025) on multimodal prognostication; The Lancet Oncology (2025) PANORAMA study; Medical Image Analysis (2025) scoping review on multimodal AI.",
+        "Teaching Assistant for Image Analysis and Medical Imaging Analysis (4 course editions, Radboud University); co-supervised Master's theses."
+      ]
+    },
+    {
+      "date": "Oct 2020 - Feb 2021",
+      "role": "Machine Learning Engineer",
+      "organization": "Everis Italy (NTT DATA)",
+      "location": "Rome, IT",
+      "focusAreaIds": ["clinical-ai-systems"],
+      "bullets": [
+        "Built AI chatbots and conversational systems for clients in banking and automotive.",
+        "Annotated industrial data for object recognition systems and developed live translation pipelines for video content."
+      ]
+    },
+    {
+      "date": "Feb 2020 - Sep 2020",
+      "role": "Research Intern",
+      "organization": "ViCOROB - NeuroImage Computing Group, University of Girona",
+      "location": "Girona, ES",
+      "focusAreaIds": ["clinical-ai-systems"],
+      "bullets": [
+        "Benchmarked MRI synthesis architectures (ResU-Net, cGAN, CycleGAN) on WMH and BraTS 2018 datasets.",
+        "ResU-Net showed superior SSIM and lower MSE vs. GAN variants under data-scarce conditions; informed Master's thesis (grade 8.6/10)."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "date": "2021 - Jun 2026 (exp.)",
+      "degree": "PhD, Artificial Intelligence",
+      "organization": "Radboud University Medical Center",
+      "location": "Nijmegen, NL"
+    },
+    {
+      "date": "2018 - 2020",
+      "degree": "Joint MSc, Medical Imaging and Applications (MAIA)",
+      "organization": "University of Burgundy (FR) · University of Cassino (IT) · University of Girona (ES)",
+      "details": "Erasmus Mundus Consortium Grant · Grades: Bien (FR), 102/110 (IT), 8.6/10 (ES)"
+    },
+    {
+      "date": "2012 - 2017",
+      "degree": "BSc, Informatics and Telecommunication Engineering",
+      "organization": "University of Cassino and Southern Lazio",
+      "location": "Cassino, IT",
+      "details": "Grade: 94/110 · Erasmus+ Exchange, Fontys University of Applied Sciences, Eindhoven (2016)"
+    }
+  ],
+  "skillGroupIds": ["languages", "ml-dl", "mlops-infra", "llm-agents"],
+  "selectedProjectIds": ["social-agent", "job-search-agent", "weekly-ai-paper-triage"],
+  "publicationNote": {
+    "label": "Publications page",
+    "href": "publications.html",
+    "text": "See the Publications page for full references with DOI links."
+  }
+}

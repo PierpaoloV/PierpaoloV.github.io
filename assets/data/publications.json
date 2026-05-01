@@ -1,0 +1,107 @@
+[
+  {
+    "id": "plos-one-tsr-2024",
+    "typeTags": [
+      { "label": "Journal", "variant": "journal" }
+    ],
+    "venue": "PLOS ONE",
+    "period": "May 2024",
+    "title": "Automatic quantification of tumor-stroma ratio as a prognostic biomarker for pancreatic cancer",
+    "href": "https://doi.org/10.1371/journal.pone.0301969",
+    "authors": "**Vendittelli P**, Bokhorst J-M, Smeets EMM, Kryklyva V, Brosens LAA, Verbeke C, Litjens G.",
+    "summary": "Multi-class U-Net for TSR segmentation across 368 patients / 4 datasets (25 NL labs). Dice 0.75 (epithelium) and 0.86 (tumor bulk) on external TCGA-PAAD validation. TSR AUC 0.61 for 6-month survival prediction on an independent cohort.",
+    "areaIds": ["computational-pathology", "clinical-ai-systems"]
+  },
+  {
+    "id": "midl-tsr-2023",
+    "typeTags": [
+      { "label": "Conference", "variant": "conference" }
+    ],
+    "venue": "MIDL 2023",
+    "period": "Sep 2023 · Poster",
+    "title": "Automatic quantification of TSR as a prognostic marker for pancreatic cancer",
+    "href": "https://openreview.net/pdf?id=Dtz_iaUpGc",
+    "authors": "**Vendittelli P**, Bokhorst J-M, Smeets EMM, Kryklyva V, Brosens LAA, Verbeke C, Litjens G.",
+    "summary": "Segmentation of tumor epithelium, healthy epithelium, and TSR estimation from pancreatic whole-slide images.",
+    "areaIds": ["computational-pathology"]
+  },
+  {
+    "id": "cancers-review-2022",
+    "typeTags": [
+      { "label": "Journal", "variant": "journal" },
+      { "label": "Review", "variant": "review" }
+    ],
+    "venue": "Cancers (MDPI)",
+    "period": "Jul 2022",
+    "title": "Setting the research agenda for clinical AI in pancreatic adenocarcinoma imaging",
+    "href": "https://doi.org/10.3390/cancers14143498",
+    "authors": "Schuurmans M, Alves N, **Vendittelli P**, Huisman H, Hermans J.",
+    "summary": "Systematic review of the current role of AI for pancreatic cancer diagnosis and personalized treatment planning.",
+    "areaIds": ["clinical-ai-systems"]
+  },
+  {
+    "id": "spie-mi-2022",
+    "typeTags": [
+      { "label": "Conference", "variant": "conference" }
+    ],
+    "venue": "SPIE Medical Imaging",
+    "period": "Apr 2022 · Poster",
+    "title": "Automatic tumour segmentation in H&E-stained whole-slide images of the pancreas",
+    "href": "https://doi.org/10.1117/12.2611542",
+    "authors": "**Vendittelli P**, Smeets EMM, Litjens G.",
+    "summary": "Multi-task U-Net with auxiliary classification head for coarse pancreatic tumour area segmentation; classification head reduced false positives.",
+    "areaIds": ["computational-pathology"],
+    "links": [
+      { "label": "PDF", "href": "assets/papers/spie_2022.pdf" }
+    ]
+  },
+  {
+    "id": "european-radiology-2025",
+    "typeTags": [
+      { "label": "Journal", "variant": "journal" }
+    ],
+    "venue": "European Radiology",
+    "period": "2025",
+    "title": "End-to-end prognostication in pancreatic cancer by multimodal deep learning: a retrospective, multicenter study",
+    "authors": "Schuurmans M, Saha A, Alves N, **Vendittelli P**, Yakar D, Sabroso-Lasa S, Xue N, Malats N, Huisman H, Hermans J, Litjens G.",
+    "summary": "Multimodal deep learning combining CT imaging and clinical data for PDAC outcome prediction across multiple centers.",
+    "areaIds": ["clinical-ai-systems"]
+  },
+  {
+    "id": "lancet-panorama-2026",
+    "typeTags": [
+      { "label": "Journal", "variant": "journal" }
+    ],
+    "venue": "The Lancet Oncology",
+    "period": "2026",
+    "title": "Artificial intelligence and radiologists in pancreatic cancer detection using standard of care CT scans (PANORAMA): an international, paired, non-inferiority, confirmatory, observational study",
+    "authors": "Alves N, Schuurmans M, Rutkowski D, Saha A, **Vendittelli P**, et al. (PANORAMA consortium).",
+    "summary": "International paired non-inferiority study comparing AI and radiologists for pancreatic cancer detection on standard-of-care CT.",
+    "areaIds": ["clinical-ai-systems"]
+  },
+  {
+    "id": "mia-scoping-review-2025",
+    "typeTags": [
+      { "label": "Journal", "variant": "journal" },
+      { "label": "Review", "variant": "review" }
+    ],
+    "venue": "Medical Image Analysis",
+    "period": "2025",
+    "title": "Navigating the landscape of multimodal AI in medicine: a scoping review on technical challenges and clinical applications",
+    "authors": "Schouten D, Nicoletti G, Dille B, Chia C, **Vendittelli P**, Schuurmans M, Litjens G, Khalili N.",
+    "summary": "Scoping review on technical challenges and clinical applications of multimodal AI in medicine.",
+    "areaIds": ["clinical-ai-systems"]
+  },
+  {
+    "id": "compayl-2025",
+    "typeTags": [
+      { "label": "Workshop", "variant": "workshop" }
+    ],
+    "venue": "COMPAYL Workshop, MICCAI 2025",
+    "period": "Sep 2025 · Poster",
+    "title": "Combining AI-based Biomarkers for PDAC Survival",
+    "authors": "Hensens L, Sabroso-Lasa S, Verbeke C, Malats N, Litjens G, **Vendittelli P**.",
+    "summary": "Multi-tissue segmentation pipeline integrating TSR, mitosis density, stromal cell density and tumor-to-tissue ratio for multivariate survival prediction in pancreatic cancer.",
+    "areaIds": ["computational-pathology", "clinical-ai-systems"]
+  }
+]
