@@ -145,7 +145,7 @@ export function renderHomePage({ mount, profile, researchAreas, skills }) {
               <div class="subtitle">${escapeHtml(profile.title)}</div>
               <div class="location">${escapeHtml(profile.location)}</div>
               ${profile.summary.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}
-              <p class="hero-open-to"><strong>${escapeHtml(profile.openTo)}</strong> ${escapeHtml(profile.milestone)}</p>
+              <p class="hero-open-to"><strong>${escapeHtml(profile.openTo)}</strong>${profile.milestone ? ` ${escapeHtml(profile.milestone)}` : ""}</p>
               <div class="cta-buttons">
                 ${renderButton(profile.primaryLink)}
                 <div class="hero-links" aria-label="External profiles and contact">

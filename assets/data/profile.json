@@ -1,6 +1,6 @@
 {
   "name": "Pierpaolo Vendittelli",
-  "title": "Postdoc Researcher - Medical AI & Computational Pathology",
+  "title": "PhD · Postdoc Researcher - Medical AI & Computational Pathology",
   "location": "Nijmegen, The Netherlands · Open to Italy · Remote EU · US-remote",
   "summary": [
     "I am Pierpaolo Vendittelli, a postdoctoral researcher developing deep-learning systems for digital pathology, spanning whole-slide image segmentation, multi-center clinical AI pipelines, prognostic modeling, and downstream applications of foundation models.",
@@ -8,7 +8,6 @@
     "I also design LLM-based automation tools to streamline research workflows and professional social media management. This portfolio brings together my publications, projects, CV, and ongoing learning log."
   ],
   "openTo": "Open to Applied Scientist, ML Engineer, and R&D roles across medical AI and applied ML.",
-  "milestone": "PhD defense: June 1, 2026.",
   "photo": "assets/definitive_profile_picture_circle.png",
   "primaryLink": {
     "label": "View CV",

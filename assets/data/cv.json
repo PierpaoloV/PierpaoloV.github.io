@@ -19,28 +19,28 @@
   "experience": [
     {
       "date": "Dec 2024 - Present",
-      "role": "Postdoc Researcher",
+      "role": "Postdoctoral Researcher",
       "organization": "Prinses Maxima Centre for Pediatric Oncology",
       "location": "Utrecht, NL",
       "focusAreaIds": ["computational-pathology", "clinical-ai-systems"],
       "bullets": [
-        "Developing deep-learning and MIL pipelines for WSI analysis of Wilms tumor, targeting anaplasia grading and clinical outcome prediction.",
-        "Coordinating multi-center dataset integration across collaborating hospitals.",
-        "Translating model outputs into interpretable biomarkers in collaboration with pathologists and pediatric oncologists.",
-        "Supervising students; contributing to peer-reviewed publications."
+        "Building deep-learning and MIL pipelines for WSI analysis of Wilms tumor, spanning anaplasia grading, biomarker extraction, and outcome modeling in pediatric oncology.",
+        "Building reproducible computational pathology workflows for multi-center data integration and clinically interpretable model outputs.",
+        "Collaborating with pathologists and pediatric oncologists to translate model outputs into usable biomarkers for research and clinical studies.",
+        "Coordinating cross-site research activities and supervising a PhD student."
       ]
     },
     {
-      "date": "Mar 2021 - Jun 2026 (exp.)",
-      "role": "PhD Candidate - Artificial Intelligence",
+      "date": "Mar 2021 - Feb 2025",
+      "role": "Doctoral Researcher - AI for Digital Pathology",
       "organization": "Radboud University Medical Center",
       "location": "Nijmegen, NL",
       "focusAreaIds": ["computational-pathology", "clinical-ai-systems"],
       "bullets": [
-        "Developed deep-learning pipelines for pancreatic cancer WSI analysis within PANCAIM (EU Horizon 2020): multi-class U-Net for TSR quantification (368 patients / 4 datasets / 25 NL labs; Dice 0.75-0.86; TSR AUC 0.61 on TCGA-PAAD). Published in PLOS ONE (2024) and SPIE MI (2022).",
-        "Extended to multi-tissue segmentation for combining AI-based biomarkers (TSR, mitosis density, stromal cell density, TTR) in multivariate PDAC survival analysis. Published at COMPAYL (MICCAI 2025 workshop).",
-        "Co-authored multi-center clinical studies: European Radiology (2025) on multimodal prognostication; The Lancet Oncology (2025) PANORAMA study; Medical Image Analysis (2025) scoping review on multimodal AI.",
-        "Teaching Assistant for Image Analysis and Medical Imaging Analysis (4 course editions, Radboud University); co-supervised Master's theses."
+        "Built AI pipelines for digital pathology in PANCAIM, spanning tumor localization, tissue segmentation, biomarker quantification, and survival modeling from histopathology.",
+        "Developed interpretable computational pathology workflows for tumor-stroma ratio and related histologic biomarkers from routine H&E slides.",
+        "Studied how morphology-derived and learned representations support prognostic modeling in pancreatic cancer, with emphasis on reproducibility and validation.",
+        "Coordinated research workflows across collaborators, supervised junior researchers, and contributed to publications in computational pathology and clinical AI."
       ]
     },
     {
@@ -68,10 +68,11 @@
   ],
   "education": [
     {
-      "date": "2021 - Jun 2026 (exp.)",
+      "date": "2021 - 2026",
       "degree": "PhD, Artificial Intelligence",
-      "organization": "Radboud University Medical Center",
-      "location": "Nijmegen, NL"
+      "organization": "Radboud University",
+      "location": "Nijmegen, NL",
+      "details": "Thesis: \"Learning from histopathology images: AI-driven biomarkers for pancreatic ductal adenocarcinoma\""
     },
     {
       "date": "2018 - 2020",
